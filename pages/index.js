@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Navbar from './components/navbar'
 import { useState } from 'react'
 import Slider from './components/slider'
@@ -7,9 +6,8 @@ import Logos from './components/logos'
 import Comparison from './components/comparison'
 import Arrivals from './components/arrivals'
 import Footer from './components/footer'
-import Gallery from './components/gallery'
-import Galleries from './components/gallery'
-
+import HomeMedia from './components/homeMedia'
+import Review from './components/review'
 
 export default function Home() {
   
@@ -18,7 +16,6 @@ export default function Home() {
   global.onscroll = ()=>{
     scrollY > 20 ? setSticky(true) : setSticky(false);
   }
-
   return (
     <div>
       <Head>
@@ -32,6 +29,8 @@ export default function Home() {
    <Logos></Logos>
    <Comparison></Comparison>
    <Arrivals></Arrivals>
+   <HomeMedia></HomeMedia>
+   <Review></Review>
    <Footer></Footer>
     </div>
   )

@@ -425,16 +425,18 @@ nav .links {
   }
 }
 
+
 @media only screen and (max-width:768px){
   .menu-icon {
     margin-right: 50px;
   }
   .slide{
-    height: 90vh;
+    height: 100vh;
     flex-direction: column-reverse;
   }
   .slider-content{
     width: 100%;
+    margin-bottom: 40px;
   }
   .frame-image {
     width: 60%;
@@ -446,11 +448,28 @@ nav .links {
     z-index: 999;
   }
   .slider-images {
-    margin-left: 3px;
-    margin-top: 80px;
+    margin-left: -228px;
+    margin-top: 19px;
     width: 100%;
+    height: 562px;
     z-index: 999;
     animation: ahad 10s infinite ;
+  }
+  .slider-images2{
+    height: 502px;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: -193px;
+    margin-top: 101px;
+  }
+
+  .slider-images1{
+   height: 492px;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-left: -207px;
+    margin-top: 102px;
+    width: 85%;
   }
 }
 
@@ -566,4 +585,231 @@ nav .links {
 }
 .react-images__view-image{
   margin: auto;
+}
+
+
+/*========================================================== homemedia-container ==========================================================================  */
+
+.homemedia-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.homemedia-content{
+  width: 40%;
+}
+.homemedia-content h1{
+  letter-spacing: 4;
+}
+.homemedia-image{
+  width: 40%;
+}
+.shop-button2{
+  background: red;
+  padding: 10px 20px;
+  transition: 0.2s;
+  color: white;
+  font-size: 24px;
+}
+.shop-button2:hover,
+.shop-button2:focus {
+  box-shadow: inset -8.5em 0 0 0 black;
+  color: white;
+}
+
+@media only screen and (max-width:768px) {
+  .homemedia-container{
+    flex-direction: column;
+  }
+  .homemedia-content{
+    width: 90%;
+  }
+  .homemedia-image{
+    margin-top: 50px ;
+    width: 90%;
+  }
+}
+
+/*========================================================== review-container ==========================================================================  */
+.review-container{
+  height: 80vh;
+  background: 
+  url("https://www.thoughtco.com/thmb/C7RiS4QG5TXcBG2d_Sh9i4hFpg0=/3620x2036/smart/filters:no_upscale()/close-up-of-clothes-hanging-in-row-739240657-5a78b11f8e1b6e003715c0ec.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.review-slider{
+  width: 40%;
+  height: 400px;
+  background: white;
+  text-align: center;
+  padding: 40px;
+  border-radius: 30px;
+
+}
+.swiper-pagination{
+  position: absolute;
+  top: 156px;
+}
+.star{
+  width: 20px;
+}
+.review-slider img{
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+@media only screen and (max-width:768px){
+  .review-container{
+    flex-direction: column-reverse;
+  }
+  .review-slider{
+    width: 90%;
+  }
+}
+
+
+
+
+/*==========================================================  Contact US ==========================================================================  */
+.contact-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-container{
+  background: rgb(245, 245, 245);
+  width: 45%;
+  text-align: center;
+  height: 500px;
+  border-radius: 20px;
+}
+.mapouter{
+  height: 500px;
+  width: 45%;
+}
+
+.file{
+  background: white;
+  border: 1px solid #33b5e5;
+  border-radius: 5px;
+}
+.shop-button3{
+  background: rgb(21, 21, 21);
+  padding: 4px 20px;
+  transition: 0.2s;
+  color: white;
+  font-size: 24px;
+}
+.shop-button3:hover,
+.shop-button3:focus {
+  box-shadow: inset -5.5em 0 0 0 rgb(139, 218, 249);
+  color: rgb(0, 0, 0);
+}
+
+
+
+/* Dashboard ===================================================================================================================================================================================================================================
+================================================================================================
+============================================================================================================================= */
+.drawer-content{
+  padding-left: 320px;
+  overflow-y: hidden !important;
+}
+.dashboard-content{
+  overflow-y: scroll !important;
+  height: 100vh !important;
+}
+.email-title{
+  background: rgb(228, 228, 228);
+  width: 100% !important;
+  padding-left: 20px;
+  padding: 12px;
+  margin: 20px;
+  font-size: 20px;
+
+}
+.sideNav{
+  margin-top: 12px;
+  font-size: 18px;
+  padding: 10px;
+  transition: 1s;
+  background: rgb(255, 255, 255);
+}
+.sideNav:hover,
+.sideNav:focus {
+  box-shadow: inset -16.5em 0 0 0 rgb(241, 241, 241);
+  color: rgb(0, 0, 0);
+}
+
+.span {
+  cursor : pointer;
+  display: block;
+  padding: 10px;
+  transition: 1s;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.span:hover{
+  box-shadow: inset -18.5em 0 0 0 rgb(241, 241, 241);
+  color: rgb(0, 0, 0);
+}
+.span::after {
+  float: right;
+  right: 10%;
+  padding-left: 7px;
+  padding-top: 7px;
+  content: "🢓";
+}
+
+.drop {
+  clear:both;
+  width:100%;
+  height:0px;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.drop li {padding-left: 10px; margin: 7px;   font-size: 16px; background: white;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .drop {height: 120px;} 
+
+
+.slide2 {
+  clear:both;
+  width:100%;
+  height:0px;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide2 li { margin: 7px;   font-size: 16px;}
+
+#touch2 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch2:checked + .slide2 {height: 120px;} 
+
+
+
+@media only screen and (max-width:998px) {
+  .drawer-content{
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width:768px) {
+  .drawer-content{
+    padding-left: 0px;
+  }
 }

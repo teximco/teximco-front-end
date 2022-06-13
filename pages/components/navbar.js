@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { useState } from 'react'
 
@@ -29,43 +30,52 @@ const Navbar = () => {
               <p  className="text-white text-xs" style={{ color : sticky ? "white" : "black" }}>Apparel Manufacturer, Expoert, Buying & Sourcing Company</p>
               </span>
             </a>
-         
+
           </div>
+       
+
           <ul className="links" style={{ background : sticky ? "black" : "white" }} >
-            <li>
-              <a href="#" style={{color  : sticky ? "white" : "black"}}>Home</a>
+            <li style={{color  : sticky ? "white" : "black"}}>
+              <Link href="/">Home</Link>
             </li>
-            <li>
-              <a href="#"  style={{color  : sticky ? "white" : "black"}}>About</a>
+            <li style={{color  : sticky ? "white" : "black"}}>
+              <Link href="/about"  >About</Link>
             </li>
-            <li>
+            <li style={{color  : sticky ? "white" : "black"}}>
               <a href="#" className="desktop-link"  style={{color  : sticky ? "white" : "black"}}>
                 Products
               </a>
               <input type="checkbox" id="show-features" />
-              <label htmlFor="show-features"  style={{color  : sticky ? "white" : "black"}}>Features</label>
-              <ul>
+              <label htmlFor="show-features"  style={{color  : sticky ? "white" : "black"}}>Products</label>
+              <ul style={{background  : sticky ? "black" : "white" , }}>
                 <li>
-                  <a href="#">Knitwear</a>
+                  <Link href="/products/Knitwear">Knitwear</Link>
                 </li>
                 <li>
-                  <a href="#">Jeanswear</a>
+                  <Link href="/products/Jeanswear">Jeanswear</Link>
                 </li>
                 <li>
-                  <a href="#">Outerwear</a>
+                  <Link href="/products/Outerwear">Outerwear</Link>
                 </li>
                 <li>
-                  <a href="#">Sweater</a>
+                  <Link href="/products/Sweater">Sweater</Link>
                 </li>
               </ul>
             </li>
            
             <li>
-              <a href="#"  style={{color  : sticky ? "white" : "black"}}>Contact</a>
+              <a href="#"  style={{color  : sticky ? "white" : "black"}}>Factory Profile</a>
             </li>
+            <li style={{color  : sticky ? "white" : "black"}}>
+              <Link href="/media">Media</Link>
+            </li>
+            <li style={{color  : sticky ? "white" : "black"}}>
+              <Link href="/contact">Contact</Link>
+            </li>
+            
           </ul>
         </div>
-  
+      
       </nav>
     </div>
   );
