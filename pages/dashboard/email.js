@@ -61,21 +61,52 @@ const Email = () => {
           <h1 className="text-5xl text-center">Emails {emails.length} </h1>
 
           {isLoading ? (
-            <div className="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
-              <div className="animate-pulse flex space-x-4">
-                <div className="rounded-full bg-slate-200 h-10 w-10"></div>
-                <div className="flex-1 space-y-6 py-1">
-                  <div className="h-2 bg-slate-200 rounded"></div>
-                  <div className="space-y-3">
-                    <div className="grid grid-cols-3 gap-4">
+                  <div className=" rounded-md p-4 max-w-2xl w-full mx-auto">
+                  <div className="animate-pulse flex space-x-96">
+                    <div className="flex-1 space-y-6 py-1">
+                      <div className="h-2 bg-slate-200 rounded"></div>
+                      <div className="h-2 bg-slate-200 rounded"></div>
                       <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-                      <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                      <div className="h-2 bg-slate-200 rounded col-span-2"></div>
+                      <div className="h-2 bg-slate-200 rounded"></div>
+                      <div className="h-2 bg-slate-200 rounded"></div>
+                      <div className="space-y-6">
+                        <div className="grid grid-cols-3 gap-4">
+                          <div className="h-2 bg-slate-200 rounded col-span-2"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                       
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                        </div>
+                        <div className="h-2 bg-slate-200 rounded"></div>
+                      </div>
+                      <div className="h-2 bg-slate-200 rounded col-span-2"></div>
+                      <div className="h-2 bg-slate-200 rounded col-span-2"></div>
+                      <div className="h-2 bg-slate-200 rounded"></div>
+                      <div className="h-2 bg-slate-200 rounded col-span-2"></div>
+                      <div className="h-2 bg-slate-200 rounded"></div>
+                      <div className="h-2 bg-slate-200 rounded"></div>
+                  
+                      <div className="space-y-6">
+                        <div className="grid grid-cols-3 gap-4">
+                          <div className="h-2 bg-slate-200 rounded col-span-2"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
+                        </div>
+                        <div className="h-2 bg-slate-200 rounded"></div>
+                      </div>
                     </div>
-                    <div className="h-2 bg-slate-200 rounded"></div>
                   </div>
                 </div>
-              </div>
-            </div>
           ) : (
             <div className="dashboard-content">
               {emails.map((email) => (
@@ -88,23 +119,25 @@ const Email = () => {
                     <div className="modal-box">
                       <h1 className="text-center font-bold">Email</h1>
                       <hr />
-                      <p className="py-4">Sender Name : {email.name}</p>
+                      <p className="py-4">Name : {email.name}</p>
+                      <hr />
+                      <p className="py-4">Email : {email?.email}</p>
+                    
                       <hr />
                       <p className="py-4">Body  : {email.message} </p>
-                     
+                      <hr />
                       <img
                         width={100}
                         src={`data:image/png;base64,${email.image}`}
                         alt=""
                       />
+                      
                       <div className="modal-action">
-                        <button onClick={() => handleDelete(email._id)}>
+                        <button className="btn btn-outline btn-error" onClick={() => handleDelete(email._id)}>
                           {" "}
-                          Delete this email{" "}
+                          Delete{" "}
                         </button>
-                        <a href="#" className="btn">
-                          close
-                        </a>
+                        <a href="#" className="btn btn-outline btn-info">Close</a>
                       </div>
                     </div>
                   </div>

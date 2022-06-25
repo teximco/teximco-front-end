@@ -55,7 +55,7 @@ const Navbar = () => {
                   <Link href="/products/Jeanswear">Jeanswear</Link>
                 </li>
                 <li>
-                  <Link href="/products/Outerwear">Outerwear</Link>
+                  <Link href="/products/Outwear">Outerwear</Link>
                 </li>
                 <li>
                   <Link href="/products/Sweater">Sweater</Link>
@@ -63,8 +63,8 @@ const Navbar = () => {
               </ul>
             </li>
            
-            <li>
-              <a href="#"  style={{color  : sticky ? "white" : "black"}}>Factory Profile</a>
+            <li style={{color  : sticky ? "white" : "black"}}>
+              <Link href="/company-profile"  style={{color  : sticky ? "white" : "black"}}>Factory Profile</Link>
             </li>
             <li style={{color  : sticky ? "white" : "black"}}>
               <Link href="/media">Media</Link>

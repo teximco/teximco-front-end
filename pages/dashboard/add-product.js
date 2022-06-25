@@ -1,18 +1,145 @@
 import Link from 'next/link';
-import React from 'react';
+import Head from 'next/head';
+import React, { useEffect, useRef, useState } from 'react';
 import DashNav from '../components/dashNav';
+import { toast } from 'react-toastify';
+
+const AddProducts = () => {
+
+  const [error , setError] = useState(false)
+  const [img , setImg] = useState('')
+  const [imgSecond , setImgSecond] = useState('')
+  const [name , setName] = useState('')
+  const [category , setCategory] = useState('')
 
 
-const Contact = () => {
+  useEffect(()=>{
+    if(img?.size > 500000){
+      setError(true)
+    }
+    if(img?.size < 500000){
+      setError(false)
+    }
+ 
+  })
+
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+
+    const date = new Date().toDateString()
+    
+    const formData = new FormData()
+    formData.append('img' , img)
+    formData.append('imgSecond' , imgSecond)
+    formData.append('name' , name)
+    formData.append('category' , category)
+    formData.append('date' , date)
+
+    
+    fetch("http://localhost:5000/products", {
+      method: 'POST',
+      body: formData
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        if (data.insertedId) {
+          toast(`${name}, You Added a Product Item`, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        }
+
+        e.target.reset();
+      });
+
+
+
+   
+
+  }
     return (
         <div>
+          <Head>
+            <title>Add Products</title>
+          </Head>
+
         <div className="drawer drawer-mobile">
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content bg-gray-100 w-full">
           <DashNav></DashNav>
-            <h1>this is Add product</h1>
+          
+          <div className="container">
+              <h1 className='text-4xl text-center mt-6 mb-10'>Add Media</h1>
+              <form onSubmit={handleSubmit}>
+                <div className="form mb-2">
+                  <p className='font-bold'>Title </p>
+                  <p className='font-bold'>:</p>
+                  <input onBlur={(e)=>setName(e.target.value)} type="text" placeholder="Full Name" className="input input-bordered input-info w-full max-w-lg" />
+                </div>
+
+                <div className="form">
+                  <p className='font-bold'>Category </p>
+                  <p className='font-bold'>:</p>
+                  <select  type="text"  onBlur={(e)=>setCategory(e.target.value)} className="input input-bordered input-info w-full h-10 max-w-lg mt-5 mb-5">
+                  <option value="Knitwear">Knitwear</option>
+                  <option value="Jeanswear">Jeanswear</option>
+                  <option value="Outwear">Outwear</option>
+                  <option value="Sweater">Sweater</option>
+                  </select>
+                </div>
+           
+               <div className="form">
+                  <p className='font-bold'>Image 1 </p>
+                  <p className='font-bold'>:</p>
+              
+                  <div className="form-file">
+             
+              <input
+                className="file input-bordered input-info w-full max-w-lg m-4"
+                name="image"
+              onChange={(e) => setImg(e.target.files[0])}
+                placeholder="select"
+                type="file"
+                id=""
+              />
+              </div>
+          
+              </div>
+
+               <div className="form">
+                  <p className='font-bold'>Image 2 </p>
+                  <p className='font-bold'>:</p>
+              
+                  <div className="form-file">
+             
+              <input
+                className="file input-bordered input-info w-full max-w-lg m-4"
+                name="image"
+              onChange={(e) => setImgSecond(e.target.files[0])}
+                placeholder="select"
+                type="file"
+                id=""
+              />
+              </div>
+              </div>
+              {
+                  error && <small className='text-center block text-red-600'>file size cannot be more than 500kb</small>
+                }
+             
+
+                <button disabled={error}  type="submit" className="shop-button3 block  m-auto mt-5">Submit</button>
+              </form>
+            </div>
 
           </div>
+          
+
           <div className="drawer-side  fixed h-full">
             <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
             <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
@@ -59,8 +186,8 @@ const Contact = () => {
           </ul>
           </div>
         </div>
-      </div>
+     </div>
     );
 };
 
-export default Contact;
+export default AddProducts;

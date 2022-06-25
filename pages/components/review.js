@@ -21,12 +21,8 @@ const Review = () => {
           spaceBetween={30}
           
           autoplay={{
-            delay: 9000,
+            delay: 5000,
             disableOnInteraction: false,
-          }}
-         
-          pagination={{
-            clickable: true,
           }}
           modules={[EffectFade, Autoplay , Navigation, Pagination]}
           className="mySwiper"

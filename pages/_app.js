@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import 'animate.css';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
 
 
 function MyApp({ Component, pageProps }) {

@@ -651,9 +651,10 @@ nav .links {
   border-radius: 30px;
 
 }
+
 .swiper-pagination{
   position: absolute;
-  top: 156px;
+  bottom: 0;
 }
 .star{
   width: 20px;
@@ -673,8 +674,85 @@ nav .links {
   }
 }
 
+/*==========================================================  media  ==========================================================================  */
+.media-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.media-subject h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.media-subject{
+  width: 35%;
+}
+.media-image{
+  margin-left: 5%;
+  width: 50%;
+}
+.media-image img{
+  width: 100%;
+}
 
 
+.media {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.media-img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100% !important;
+  width: 250px;
+  height: 200px;
+}
+.media-cards {
+  width: 350px;
+  height: 450px;
+
+  border-radius: 10px;
+  background: #f3f3f3;
+  box-shadow:  8px 8px 12px #d7d7d7,
+              -8px -8px 12px #e9e9e9;
+}
+.media-cards img { 
+  width: 330px;
+  height: 300px;
+}
+
+.dashLogo{
+  width: 260px;
+  height: 50px;
+}
+.media-cards img{
+  height: 250px !important;
+}
+.media-cards  h3 {
+  font-size: 18px;
+  display: inline;
+}
+
+.media-button{
+  background: black;
+  padding: 5px 20px;
+  transition: 0.5s;
+  color: white;
+  font-size: 24px;
+}
+.media-button:hover,
+.media-button:focus {
+  box-shadow: inset -6.5em 0 0 0 red;
+  color: white;
+}
+
+.react-images__footer__caption{
+  font-size: 58px;
+  margin: auto;
+  padding-bottom: 50px;
+
+}
 
 /*==========================================================  Contact US ==========================================================================  */
 .contact-container{
@@ -711,9 +789,35 @@ nav .links {
   box-shadow: inset -5.5em 0 0 0 rgb(139, 218, 249);
   color: rgb(0, 0, 0);
 }
-
-
-
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.label img {
+  width: 300px !important;
+  height: 300px !important
+}
+.modal-div{
+  background: rgba(193, 193, 193, 0.738);
+}
+.modal-boxs{
+  
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-image{
+  margin-left: 5%;
+}
+.modal-boxs img{
+  width: 90%;
+  height: 500px !important;
+}
+.product{
+  border: 1px solid rgb(222, 222, 222);
+}
 /* Dashboard ===================================================================================================================================================================================================================================
 ================================================================================================
 ============================================================================================================================= */
@@ -723,7 +827,7 @@ nav .links {
 }
 .dashboard-content{
   overflow-y: scroll !important;
-  height: 100vh !important;
+  height: 90vh !important;
 }
 .email-title{
   background: rgb(228, 228, 228);
@@ -811,5 +915,50 @@ nav .links {
 @media only screen and (max-width:768px) {
   .drawer-content{
     padding-left: 0px;
+  }
+}
+
+
+/*========================================================================================================================================================================================================= add media  ======================================================================================================================================= */
+
+.form{
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 10fr;
+  align-items: center;
+}
+.form  .m-4{
+  margin-left: 0 !important;
+  padding-top: 4px ;
+  padding-bottom: 4px ;
+}
+.tox-tinymce{
+  margin-top: 15px;
+  width: 510px !important;
+  border: 1px solid rgb(0, 210, 238) !important;
+}
+@media only screen and (max-width:998px){
+  .form{
+    margin-left: 10px;
+
+  }
+  .tox-tinymce{
+    width: 510px !important;
+  }
+  .avater2{
+    display: none;
+  }
+}
+@media only screen and (max-width:768px){
+  .form{
+    text-align: center;
+    margin-left: 5px;
+    grid-template-columns: 1fr 1fr 5fr;
+  }
+  .avater2{
+    display: none;
+  }
+  .tox-tinymce{
+    width: 280px !important;
   }
 }
