@@ -64,7 +64,7 @@ const Navbar = () => {
             </li>
            
             <li style={{color  : sticky ? "white" : "black"}}>
-              <Link href="/company-profile"  style={{color  : sticky ? "white" : "black"}}>Factory Profile</Link>
+              <Link href="/factory-profile"  style={{color  : sticky ? "white" : "black"}}>Factory Profile</Link>
             </li>
             <li style={{color  : sticky ? "white" : "black"}}>
               <Link href="/media">Media</Link>

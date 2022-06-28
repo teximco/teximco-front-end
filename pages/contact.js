@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
+import Captcha from "react-numeric-captcha";
 
 export default function Home() {
   const [error, setError] = useState(false);
@@ -8,6 +9,11 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+
+  const [captchaSuccess , setcaptchaSuccess] = useState(false);
+  
+console.log(captchaSuccess.captchaSuccess)
+
 
   useEffect(() => {
     console.log(img?.size);
@@ -18,7 +24,10 @@ export default function Home() {
     if (img?.size < 500000) {
       setError(false);
     }
+
+
   });
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -52,13 +61,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar></Navbar>
-      <h1 className="text-center text-5xl mt-10 mb-24">Contact Us</h1>
-      <div className="contact-container">
+      <h1 className="text-center text-5xl mt-10 mb-16">Contact Us</h1>
+      <div className="addresses  mb-16">
+
+        <div className="address">
+        <h1 className="text-2xl font-bold">Bangladesh Address : </h1>
+        <br />
+        <p>House # 72,<br /> Road # 15, Sector # 11,<br /> Uttara, Dhaka-1230,<br /> Bangladesh.</p>
+        </div>
+        <div className="address">
+        <h1 className="text-2xl font-bold">UAE Address : </h1>
+        <br />
+        <p>Youngboy Germents FZC , <br /> Ajman Free Zone , <br /> P. O. Office 21166 , Ajman ,<br /> UAE.</p>
+        </div>
+        <div className="address">
+          <h1 className="text-2xl font-bold">China Address : </h1>
+          <br />
+        <p>Ningbo Allinroot Apparel Co. Ltd. <br /> Room 318 Yingsheng Plaza , <br /> No.456 Tai an Road, <br /> Yinzhou, Ningbo-315100,<br /> China.</p>
+        </div>
+
+      </div>
+      <div className="contact-container pb-20">
         <div className="mapouter">
           <div className="gmap_canvas">
             <iframe
               width="100%"
-              height="500"
+              height="600"
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=Dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed"
             ></iframe>
@@ -68,6 +96,7 @@ export default function Home() {
           </div>
         </div>
         <div className="form-container">
+          <h1 className="text-center text-5xl mt-2">Get In Touch</h1>
           <form
             action="http://localhost:5001/contacts"
             method="post"
@@ -78,6 +107,7 @@ export default function Home() {
                 type="text"
                 name="name"
                 onBlur={(e) => setName(e.target.value)}
+                required
                 placeholder="Full Name"
               className="input input-bordered input-info w-full max-w-xs m-4"
               />
@@ -88,6 +118,7 @@ export default function Home() {
                 type="email"
                 name="email"
                 onBlur={(e) => setEmail(e.target.value)}
+                required
                 placeholder="Enter Email"
                 className="input input-bordered input-info w-full max-w-xs m-4"
               />
@@ -101,7 +132,7 @@ export default function Home() {
                 className="textarea textarea-info input-bordered input-info h-full w-full max-w-xs m-4"
                 placeholder="Message"
               />
-         
+   
          
             {error && (
               <small className="text-center text-red-600 block">
@@ -110,7 +141,7 @@ export default function Home() {
             )}
          
             {/* <input type="file" name='attachment'   onChange={(e) => setImg(e.target.files[0])}  /> */}
-
+ 
            
               <div className="form-file">
               <input
@@ -120,10 +151,14 @@ export default function Home() {
                 placeholder="select"
                 type="file"
                 id=""
+              
               />
             </div>
-
-            <button type="submit" className="shop-button3  m-4">Submit</button>
+            <Captcha
+            
+            onChange={status => setcaptchaSuccess({ captchaSuccess: status })}
+          />
+            <button type="submit" disabled={!captchaSuccess.captchaSuccess || error } className="shop-button3  m-4">Submit</button>
 
           </form>
         </div>
