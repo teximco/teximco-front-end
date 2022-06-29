@@ -1259,21 +1259,19 @@ border: 5px solid white;
   padding-top: 25px ;
   
 }
+.count svg{
+  margin: auto;
+  width: 27px;
+
+}
 .count h6 {
   color: rgb(255, 255, 255);
 }
 
-@media only screen and (max-width: 768px) {
-  .counter {
-    height: 320px;
-  }
-  .counts {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
-  }
-}
 @media only screen and (max-width:998px){
+  .counter{
+    height: 450px;
+  }
   .employee{
     width: 90%;
   }
@@ -1293,6 +1291,11 @@ border: 5px solid white;
     width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  .counts {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (max-width:768px){
@@ -1324,5 +1327,13 @@ border: 5px solid white;
     width: 90%;
     margin-top: 10px;
     margin-bottom: 40px;
+  }
+  .counter {
+    height: 320px;
+  }
+  .counts {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
   }
 }

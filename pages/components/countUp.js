@@ -11,9 +11,10 @@ function Countup() {
       <h1 className='text-center text-4xl'>In 2022 </h1>
       <div className="counts container">
         <div className="count">
-        <FontAwesomeIcon className='mb-2'  icon={faBook} />
-          <h6 className=''>TOTAL BRAND </h6>
-          <CountUp     className="fs-1 fw-bold" end={1250} />
+        <FontAwesomeIcon className=''  icon={faBook} />
+        
+          <h6 className='mt-2'>TOTAL BRAND </h6>
+          <CountUp     className=" text-xl fw-bold" end={1250} />
         </div>
         <div className="count">
         <FontAwesomeIcon className='fs-3 pb-2'  icon={faUser} />
