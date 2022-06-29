@@ -1172,6 +1172,107 @@ nav .links {
 
 /*========================================================================================================================================================================================================= About Us  ======================================================================================================================================= */
 
+.employees{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin: 50px;
+ 
+}
+.employee{
+  margin: auto;
+    position: relative;
+    height: 400px;
+    width: 300px;
+    background: #fff;
+    overflow: hidden;
+    transition: all 3s ease;
+    border-radius: 2px;
+  
+  }
+  .employee:hover{
+    box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.2);
+    transition: all 3s ease;
+    
+  }
+  .employee .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+  }
+  .small-image{
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+  }
+  .employee .image img{
+    height: 400px;
+    width: 300px;
+  
+    border-radius: 2px;
+    transition: all 0.6s ease;
+  }
+  .employee:hover .image img{
+    transform: scale(1.4);
+    transition: all 3s ease;
+    filter: blur(1px);
+
+  }
+  .employee .card-content{
+    position: relative;
+    height: 400px;
+    width: 300px;
+  }
+  .card-content .wrapper{
+    position: absolute;
+    bottom: -100%;
+    width: 300px;
+    color: #fff;
+    background: rgb(0, 0, 0);
+    box-shadow: -1px -1px 6px rgba(0,0,0,0.1);
+    transition: bottom 1s ease;
+    padding: 20px;
+  }
+  .employee:hover .card-content .wrapper{
+    bottom: 0px;
+    padding-bottom: 10px;
+    height: 400px;
+    width: 300px;
+    transition: bottom 1s ease;
+  }
+  .wrapper .title{
+    font-size: 22px;
+    font-weight: 500;
+    color: red;
+  }
+  .wrapper p{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+  }
+ 
+  .wrapper .content{
+    margin: 10px 0;
+  }
+  .wrapper .content .name{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .wrapper .content{
+    width: 50%;
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+  }
+
+
+
 .whatwedo{
   margin: 5%;
   display: flex;
@@ -1198,23 +1299,8 @@ nav .links {
   background: linear-gradient(to right, #4d4e4fb6, rgba(78, 79, 81, 0.689)),
   url("https://www.theneweconomy.com/wp-content/uploads/2020/06/B051-remote-working-coronavirus-technology-scaled.jpg");
 }
-.employees{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-}
-.employee{
-  margin: auto;
-  width: 500px;
-  height: 200px;
-  background: red;
-  padding-left: 20px;
-  padding-top: 20px;
-  border-radius: 6px;
-background: #ffffff;
-box-shadow:  7px 7px 13px #cccccc,
-             -7px -7px 13px #f4f4f4;
-}
+
+
 .table{
   margin: 4%;
   display: grid;
@@ -1271,6 +1357,13 @@ border: 5px solid white;
 @media only screen and (max-width:998px){
   .counter{
     height: 450px;
+  }
+  .employee:hover .image img{
+    transform: scale(1);
+
+  }
+  .employees{
+    grid-template-columns:repeat(2,1fr);
   }
   .employee{
     width: 90%;
@@ -1329,7 +1422,7 @@ border: 5px solid white;
     margin-bottom: 40px;
   }
   .counter {
-    height: 320px;
+    height: 450px;
   }
   .counts {
     display: grid;

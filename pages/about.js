@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import Countup from "./components/countUp";
+import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 
 const About = () => {
@@ -79,12 +80,27 @@ const About = () => {
         </p>
 
         <Countup></Countup>
-        {/* <div className="management">
+        <div className="management">
           <h1 className="text-4xl text-center mt-10 mb-10">Our Management</h1>
           <div className="employees">
-            <div className="employee">
-              <p>
-                1). <br /> Name: Mohammad Mijanur Rahman
+
+
+          <div className="employee" data-aos="fade-up">
+          <div className="image">
+            <img
+              src="Mijanur.png"
+              alt=""
+            />
+          </div>
+          <div className="card-content">
+            <div className="wrapper">
+            <img
+            className="small-image"
+            src="Mijanur.png"
+              alt=""
+            />
+              <p className="management-content">
+               <br /> Name: Mohammad Mijanur Rahman
                 <br />
                 Position: Managing Director
                 <br />
@@ -99,40 +115,80 @@ const About = () => {
                 Contact Number: <a href="tel:+8801914682466">+88 01914682466</a>
                 <br />
                 Skype: mijan.dhk, WeChat: TEXIMCO
-              </p>
+                </p>
             </div>
-            <div className="employee">
-              <p>
-                2). <br /> Name : Farjana Akter <br />
+          </div>
+        </div>
+
+
+          <div className="employee" data-aos="fade-up">
+          <div className="image">
+            <img
+                 src="farjana.jpeg"
+              alt=""
+            />
+          </div>
+          <div className="card-content">
+            <div className="wrapper">
+            <img
+            className="small-image"
+            src="farjana.jpeg"
+              alt=""
+            />
+           <p>
+               <br /> Name : Farjana Akter <br />
                 Position: Chairman
                 <br />
                 E-mail:{" "}
                 <a href="mailto:farjana@teximcobd.com">farjana@teximcobd.com</a>
                 <br />
-              </p>
+                </p>
             </div>
+          </div>
+        </div>
 
-            <div className="employee">
-              <p>
-                3). <br /> Md. Mostafa Kamal <br />
+          <div className="employee" data-aos="fade-up">
+          <div className="image">
+            <img
+              src="number.png"
+              alt=""
+            />
+          </div>
+          <div className="card-content">
+            <div className="wrapper">
+            <img
+            className="small-image"
+            src="number.png"
+              alt=""
+            />
+                <p>
+                <br /> Md. Mostafa Kamal <br />
                 Position: Director( Marketing & Merchandising) <br />
                 E-mail:{" "}
                 <a href="mailto:info@teximcobd.com">info@teximcobd.com</a>{" "}
                 <br />
               </p>
             </div>
-            <div className="employee">
-              <p>
-                4) <br /> Md. Mozibul Haque <br />
-                Position: Director(International Marketing)
-                <br />
-                E-mail:{" "}
-                <a href="mailto:info@teximcobd.com">info@teximcobd.com</a>
-              </p>
-            </div>
-            <div className="employee">
-              <p>
-                5) <br /> Garavy chen <br />
+          </div>
+        </div>
+
+          <div className="employee" data-aos="fade-up">
+          <div className="image">
+            <img
+               src="number.png"
+              alt=""
+            />
+          </div>
+          <div className="card-content">
+            <div className="wrapper">
+            <img
+            className="small-image"
+            src="number.png"
+              alt=""
+            />
+            
+            <p>
+              <br /> Garavy chen <br />
                 Position: Director(International Marketing) <br />
                 E-mail:{" "}
                 <a href="mailto:info@teximcobd.com">info@teximcobd.com</a>
@@ -140,6 +196,35 @@ const About = () => {
             </div>
           </div>
         </div>
+
+          <div className="employee" data-aos="fade-up">
+          <div className="image">
+            <img
+             src="number.png"
+              alt=""
+            />
+          </div>
+          <div className="card-content">
+            <div className="wrapper">
+            <img
+            className="small-image"
+            src="number.png"
+              alt=""
+            />
+                <p>
+              <br /> Md. Mozibul Haque <br />
+                Position: Director(International Marketing)
+                <br />
+                E-mail:{" "}
+                <a href="mailto:info@teximcobd.com">info@teximcobd.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+          </div>
+        </div>
+        
         <h1 className="text-4xl text-center mt-20 mb-5">About Company</h1>
         <div className="table">
           <p className="styled-row">Company Name</p>
@@ -249,8 +334,10 @@ const About = () => {
             {" "}
             <Link href="/">http://www.teximcobd.com</Link>
           </p>
-        </div> */}
+        </div>
+        
       </div>
+      <Footer></Footer>
     </div>
   );
 };
