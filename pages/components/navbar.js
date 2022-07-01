@@ -39,7 +39,25 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li style={{color  : sticky ? "white" : "black"}}>
-              <Link href="/about"  >About</Link>
+              <a href="#" className="desktop-link"  style={{color  : sticky ? "white" : "black"}}>
+                About Us
+              </a>
+              <input type="checkbox" id="show-features" />
+              <label htmlFor="show-features"  style={{color  : sticky ? "white" : "black"}}>About Us</label>
+              <ul style={{background  : sticky ? "black" : "white" , }}>
+                <li>
+                  <Link href="/company/who-we-are">Who We Are</Link>
+                </li>
+                <li>
+                  <Link href="/company/product-range">Product Range</Link>
+                </li>
+                <li>
+                  <Link href="/company/how-we-work">How We Work</Link>
+                </li>
+                <li>
+                  <Link href="/company/company-profile">Company Profile</Link>
+                </li>
+              </ul>
             </li>
             <li style={{color  : sticky ? "white" : "black"}}>
               <a href="#" className="desktop-link"  style={{color  : sticky ? "white" : "black"}}>
@@ -64,7 +82,7 @@ const Navbar = () => {
             </li>
            
             <li style={{color  : sticky ? "white" : "black"}}>
-              <Link href="/factory-profile"  style={{color  : sticky ? "white" : "black"}}>Factory Profile</Link>
+              <Link href="/vendors-and-partners"  style={{color  : sticky ? "white" : "black"}}>Vendor/Partner</Link>
             </li>
             <li style={{color  : sticky ? "white" : "black"}}>
               <Link href="/media">Media</Link>

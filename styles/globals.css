@@ -925,7 +925,12 @@ nav .links {
   height: 600px;
   width: 45%;
 }
-
+.our-management{
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
 .file{
   background: white;
   border: 1px solid #33b5e5;
@@ -978,6 +983,15 @@ nav .links {
   align-items: center;
   gap: 30px;
 }
+.management-card{
+  text-align: center;
+  width: 100%;
+  height:180px;
+  background: #ffffff;
+  box-shadow:  7px 7px 13px #cccccc,
+               -7px -7px 13px #f4f4f4;
+  padding: 20px;
+}
 .address{
   width: 100%;
   height:250px;
@@ -996,6 +1010,9 @@ nav .links {
   }
   .mapouter , .form-container{
     width: 90%;
+  }
+  .our-management{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 /* Dashboard ===================================================================================================================================================================================================================================
@@ -1171,7 +1188,13 @@ nav .links {
 
 
 /*========================================================================================================================================================================================================= About Us  ======================================================================================================================================= */
-
+.container{
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+ 
+}
 .employees{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
