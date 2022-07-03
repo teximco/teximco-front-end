@@ -73,10 +73,17 @@ const Navbar = () => {
                   <Link href="/products/Jeanswear">Jeanswear</Link>
                 </li>
                 <li>
-                  <Link href="/products/Outwear">Outerwear</Link>
+                  <Link href="/products/Sweater">Sweater</Link>
                 </li>
                 <li>
-                  <Link href="/products/Sweater">Sweater</Link>
+                  <Link href="/products/Outerwear">Outerwear</Link>
+                </li>
+              
+                <li>
+                  <Link href="/products/Sweater">Bags/Towels</Link>
+                </li>
+                <li>
+                  <Link href="/products/Sweater">Hades/Caps</Link>
                 </li>
               </ul>
             </li>

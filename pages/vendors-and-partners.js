@@ -31,7 +31,7 @@ const FactoryProfile = () => {
             </p>
           </div>
         </div>
-        <hr className="m-10" />
+        <hr className="m-10 bookends" />
         <div className="sections-factory">
           <div className="factory-content text-right md:mr-10">
             <h1 className="font-bold">Devor Sweater</h1>
@@ -48,7 +48,7 @@ const FactoryProfile = () => {
             <img src="Screenshot8.png" alt="" />
           </div>
         </div>
-        <hr className="m-10" />
+        <hr className="m-10 bookends" />
         <div className="sections-factory">
           <div className="factory-image">
             <img src="Screenshot_1.png" alt="" />
@@ -65,7 +65,7 @@ const FactoryProfile = () => {
             </p>
           </div>
         </div>
-        <hr className="m-10" />
+        <hr className="m-10 bookends" />
         <div className="sections-factory">
           <div className="factory-content text-right md:mr-10">
             <h1 className="font-bold">Uttara Knit Wear</h1>
@@ -87,7 +87,7 @@ const FactoryProfile = () => {
             <img src="Screenshot_2.png" alt="" />
           </div>
         </div>
-        <hr className="m-10" />
+        <hr className="m-10 bookends" />
         <div className="sections-factory">
           <div className="factory-image">
             <img src="Screenshot5.png" alt="" />
@@ -109,7 +109,7 @@ const FactoryProfile = () => {
             </p>
           </div>
         </div>
-        <hr className="m-10" />
+        <hr className="m-10 bookends" />
         <div className="sections-factory">
           <div className="factory-content text-right md:mr-10">
             <h1 className="font-bold"> Automation Knit Wear Ltd.</h1>
@@ -131,7 +131,7 @@ const FactoryProfile = () => {
             <img src="Screenshot6.png" alt="" />
           </div>
         </div>
-        <hr className="m-10" />
+        <hr className="m-10 bookends" />
         <div className="sections-factory">
           <div className="factory-image">
             <img src="Screenshot7.png" alt="" />
@@ -153,7 +153,7 @@ const FactoryProfile = () => {
             </p>
           </div>
         </div>
-        <hr className="m-10" />
+        <hr className="m-10 bookends" />
         <div className="sections-factory">
           <div className="factory-content text-right md:mr-10">
             <h1 className="font-bold">Target Denim & Casual Wear</h1>
@@ -176,6 +176,127 @@ const FactoryProfile = () => {
           </div>
         </div>
       </div>
+
+<h1 className="text-3xl text-center mt-48 font-bold">Quality Assurance</h1>
+<p className="text-center">Quality Control System</p>
+      <div className="timeline2">
+  <div className="outer2">
+
+    <div className="timelines2">
+      <div className="info2">
+        <h3 className="title2">Procurement</h3>
+        <div className='timelines-card'>
+          <p>Buyer’s approval before production</p>
+          <span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>Pre Inspection before shipment</p>
+          <span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>
+          In-house inventory
+          as per sample
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div className="timelines2">
+      <div className="info2">
+        <h3 className="title2">Pre-Production</h3>
+        <div className='timelines-card'>
+          <p>
+Pattern, Market & Cons.</p>
+<span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>
+Fabric, Accessories
+& swatch approval
+</p>
+<span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>
+          Sample size set &
+wash approval
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div className="timelines2">
+      <div className="info2">
+        <h3 className="title2">Cutting</h3>
+        <div className='timelines-card'>
+          <p>
+          Fabric inspection</p>
+          <span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>
+          Shade band
+</p>
+<span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>
+          Check 100% cutting parts
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div className="timelines2">
+      <div className="info2">
+        <h3 className="title2">Sewing </h3>
+        <div className='timelines-card'>
+          <p>
+          100% Front parts inspection</p>
+          <span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>
+          100% Back parts inspection
+</p>
+<span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>
+          Assembling process inspection
+          </p>
+          <span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>
+          Final table inspection
+          </p>
+        </div>
+      </div>
+    </div>
+<br />
+    <div className="timelines2">
+      <div className="info2">
+        <h3 className="title2">Finishing </h3>
+        <div className='timelines-card'>
+          <p>
+          Process inspection</p>
+          <span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>
+         Measurement and Getup
+</p>
+<span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>
+          Hourly GMT audit inspection
+          </p>
+          <span className='left-arrow'>🡆</span>
+          <span className='bottom-arrow'>🢃</span>
+          <p>
+          Daily GMT audit inspection
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+ 
+
     </div>
   );
 };

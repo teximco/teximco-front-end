@@ -1246,6 +1246,243 @@ nav .links {
     filter: blur(1px);
 
   }
+  hr{
+    border: 0;
+    margin: 1.35em auto;
+    max-width: 100%;
+    background-position: 50%;
+    box-sizing: border-box;
+  }
+
+  .bookends {
+    position: relative;
+    border-width: 5px;
+    border-color: hsl(0, 0%, 50%) transparent;
+    height: 11px;
+    border-style: double;
+    width: 90%;
+    margin: 1.5rem !important;
+  }
+  .bookends:before,
+  .bookends:after {
+    position: absolute;
+    bottom: -3.536px;
+    width: 7.071px;
+    height: 7.071px;
+    display: block;
+    border-width: 0 7.071px 7.071px 0;
+    border-color: hsl(0, 0%, 50%);
+    border-style: double;
+    box-sizing: border-box;
+  }
+  .bookends:before {
+    transform: translateZ(0) rotate(-45deg);
+    left: -21px;
+  }
+  .bookends:after {
+    transform: translateZ(0) rotate(135deg);
+    right: -21px;
+  }
+  
+  .bookends-dots {
+    position: relative;
+    border-bottom: 1px solid hsla(0, 0%, 50%, 0.75);
+    width: 50%;
+  }
+  .bookends-dots:before,
+  .bookends-dots:after {
+    position: absolute;
+    bottom: -5px;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-width: 0 1px 1px 0;
+    border-color: hsla(0, 0%, 50%, 0.75);
+    border-style: solid;
+    box-sizing: border-box;
+    border-radius: 100%;
+  }
+  .bookends-dots:before {
+    transform: translateZ(0) rotate(-45deg);
+    left: -10px;
+  }
+  .bookends-dots:after {
+    transform: translateZ(0) rotate(135deg);
+    right: -10px;
+  }
+
+/* Timeline Container */
+.timeline {
+  display: block;
+  background: white;
+  margin: 20px 5% 20px 10%;
+  padding: 20px;
+  
+}
+
+/* Card container */
+.timelines {
+  position: relative;
+  max-width: 90%;
+  
+}
+
+/* setting padding based on even or odd */
+.timelines:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.timelines:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.timelines::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border:  solid orangered;
+}
+
+/* Setting the border of top, bottom, left */
+.timelines:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.timelines:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.timelines:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.timelines:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.timelines:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title of the card */
+.timelines-title {
+  color: orangered;
+  position: relative;
+}
+
+/* Timeline dot  */
+.timelines-title::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 999px;
+  border: 5px solid orangered;
+}
+
+/* text right if the card is even  */
+.timelines:nth-child(even) > .info > .timelines-title {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.timelines:nth-child(odd) > .info > .timelines-title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.timelines:nth-child(even) > .info > .timelines-title::before {
+  right: -45px;
+}
+
+
+.timeline2 {
+  background: white;
+  margin: 20px 2% 20px 8%;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer2 {
+  border-left: 5px solid rgb(221, 112, 112);
+}
+
+/* Card container */
+.timelines2 {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: rgb(245, 245, 245);
+  color: rgb(4, 4, 4);
+  border-radius: 8px;
+  width: 90%;
+  
+}
+.bottom-arrow{
+  display: none;
+}
+/* Information about the timeline */
+.info2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title of the card */
+.title2 {
+  color: orangered;
+  position: relative;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* Timeline dot  */
+.title2::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 999px;
+  left: -43px;
+  border: 3px solid orangered;
+}
+
+.timelines-card{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.timelines-card p {
+  background: white;
+  border: 2px solid rgb(202, 184, 184);
+  padding: 20px;
+}
   .employee .card-content{
     position: relative;
     height: 400px;
@@ -1381,6 +1618,7 @@ border: 5px solid white;
   .counter{
     height: 450px;
   }
+
   .employee:hover .image img{
     transform: scale(1);
 
@@ -1415,6 +1653,23 @@ border: 5px solid white;
   }
 }
 @media only screen and (max-width:768px){
+  .bottom-arrow{
+    display: block;
+  }
+  .left-arrow{
+    display: none;
+  }
+  .timeline {
+
+    margin: 20px 2% 20px 6%;
+    
+  }
+  .timeline2 {
+    margin: 20px 2% 20px 6%;
+  }
+  .timelines-card{
+    flex-direction: column;
+  }
   .employees{
     display: grid;
     grid-template-columns: repeat(1, 1fr);

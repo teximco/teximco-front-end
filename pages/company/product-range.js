@@ -2,6 +2,8 @@ import React from 'react';
 import Footer from '../components/footer';
 import Navbar from '../components/navbar';
 import Head from "next/head"
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 const ProductRange = () => {
     return (
@@ -31,6 +33,10 @@ outerwear) in Bangladesh, which is absolutely high profile factories at around. 
 satisfaction, we work on followed from the time of developing samples until the ready-made garment is  
 loaded into the container.
             </p>
+
+
+
+
             <Footer></Footer>
         </div>
     );

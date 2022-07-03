@@ -109,7 +109,7 @@ export default function Home() {
       <h1 className="text-center text-5xl mt-10 mb-16">Contact Us</h1>
       <div className="addresses  mb-16">
         <div className="address">
-          <h1 className="text-2xl font-bold">Bangladesh Address : </h1>
+          <h1 className="text-2xl font-bold">Bangladesh Office : </h1>
           <br />
           <p>
             House # 72,
@@ -119,7 +119,7 @@ export default function Home() {
           </p>
         </div>
         <div className="address">
-          <h1 className="text-2xl font-bold">UAE Address : </h1>
+          <h1 className="text-2xl font-bold">UAE Office : </h1>
           <br />
           <p>
             Youngboy Germents FZC , <br /> Ajman Free Zone , <br /> P. O. Office
@@ -127,7 +127,7 @@ export default function Home() {
           </p>
         </div>
         <div className="address">
-          <h1 className="text-2xl font-bold">China Address : </h1>
+          <h1 className="text-2xl font-bold">China Office : </h1>
           <br />
           <p>
             Ningbo Allinroot Apparel Co. Ltd. <br /> Room 318 Yingsheng Plaza ,{" "}
