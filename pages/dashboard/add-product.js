@@ -87,10 +87,12 @@ const AddProducts = () => {
                   <p className='font-bold'>Category </p>
                   <p className='font-bold'>:</p>
                   <select  type="text"  onBlur={(e)=>setCategory(e.target.value)} className="input input-bordered input-info w-full h-10 max-w-lg mt-5 mb-5">
+                  <option value="Sweater">Sweater</option>
                   <option value="Knitwear">Knitwear</option>
                   <option value="Jeanswear">Jeanswear</option>
                   <option value="Outerwear">Outwear</option>
-                  <option value="Sweater">Sweater</option>
+                  <option value="Bags-and-Towels">Bags/Towels</option>
+                  <option value="Hades-and-Caps">Hades/Caps</option>
                   </select>
                 </div>
            

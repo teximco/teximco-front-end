@@ -80,10 +80,10 @@ const Navbar = () => {
                 </li>
               
                 <li>
-                  <Link href="/products/Sweater">Bags/Towels</Link>
+                  <Link href="/products/Bags-and-Towels">Bags/Towels</Link>
                 </li>
                 <li>
-                  <Link href="/products/Sweater">Hades/Caps</Link>
+                  <Link href="/products/Hades-and-Caps">Hades/Caps</Link>
                 </li>
               </ul>
             </li>

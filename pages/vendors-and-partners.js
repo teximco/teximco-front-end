@@ -1,3 +1,6 @@
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import React from "react";
 import Navbar from "./components/navbar";
@@ -187,11 +190,11 @@ const FactoryProfile = () => {
         <h3 className="title2">Procurement</h3>
         <div className='timelines-card'>
           <p>Buyer’s approval before production</p>
-          <span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+          <span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /></span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>Pre Inspection before shipment</p>
-          <span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+          <span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /></span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>
           In-house inventory
           as per sample
@@ -206,14 +209,14 @@ const FactoryProfile = () => {
         <div className='timelines-card'>
           <p>
 Pattern, Market & Cons.</p>
-<span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+<span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /> </span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>
 Fabric, Accessories
 & swatch approval
 </p>
-<span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+<span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /></span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>
           Sample size set &
 wash approval
@@ -228,13 +231,13 @@ wash approval
         <div className='timelines-card'>
           <p>
           Fabric inspection</p>
-          <span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+          <span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /></span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>
           Shade band
 </p>
-<span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+<span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /></span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>
           Check 100% cutting parts
           </p>
@@ -248,18 +251,18 @@ wash approval
         <div className='timelines-card'>
           <p>
           100% Front parts inspection</p>
-          <span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+          <span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /></span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>
           100% Back parts inspection
 </p>
-<span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+<span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /></span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>
           Assembling process inspection
           </p>
-          <span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+          <span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /></span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>
           Final table inspection
           </p>
@@ -273,18 +276,18 @@ wash approval
         <div className='timelines-card'>
           <p>
           Process inspection</p>
-          <span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+          <span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /></span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>
          Measurement and Getup
 </p>
-<span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+<span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /></span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>
           Hourly GMT audit inspection
           </p>
-          <span className='left-arrow'>🡆</span>
-          <span className='bottom-arrow'>🢃</span>
+          <span className='left-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowRight} /></span>
+          <span className='bottom-arrow'><FontAwesomeIcon className='fs-3 pb-2'  icon={faArrowDown} /></span>
           <p>
           Daily GMT audit inspection
           </p>

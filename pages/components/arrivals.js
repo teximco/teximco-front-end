@@ -24,7 +24,7 @@ const Arrivals = () => {
                   <Link
                     href={{
                       pathname: "/products/[catagory]",
-                      query: { catagory: "Outerwear" },
+                      query: { catagory: "Hades-and-Caps" },
                     }}
                   >
                   <span data-attr="Explore">Explore</span>
@@ -49,7 +49,7 @@ const Arrivals = () => {
                   <Link
                     href={{
                       pathname: "/products/[catagory]",
-                      query: { catagory: "Sweater" },
+                      query: { catagory: "Bags-and-Towel" },
                     }}
                   >
                 <span data-attr="Explore">Explore</span>

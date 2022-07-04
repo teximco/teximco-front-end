@@ -112,7 +112,7 @@ export default function Home() {
           <h1 className="text-2xl font-bold">Bangladesh Office : </h1>
           <br />
           <p>
-            House # 72,
+            House # 72 (1st and 2nd Floor),
             <br /> Road # 15, Sector # 11,
             <br /> Uttara, Dhaka-1230,
             <br /> Bangladesh.
@@ -136,6 +136,7 @@ export default function Home() {
           </p>
         </div>
       </div>
+
       <div className="contact-container pb-20">
         <div className="mapouter">
           <div className="gmap_canvas">
@@ -143,7 +144,8 @@ export default function Home() {
               width="100%"
               height="600"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?q=Dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed"
+             
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3755.297498795497!2d90.38516465318806!3d23.87573247253497!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5bdbec21407%3A0x86f4bf9cfa7ed2d8!2sTEXIMCO%20(BD)%20LTD.!5e0!3m2!1sen!2sbd!4v1656841339793!5m2!1sen!2sbd"
             ></iframe>
             <a href="https://2piratebay.org"></a>
             <br />

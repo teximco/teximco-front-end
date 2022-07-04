@@ -10,6 +10,7 @@ const HowWeWork = () => {
         <title>How We Work</title>
       </Head>
       <Navbar></Navbar>
+      <h1 className="mt-10 mb-10 text-5xl text-center">How We Work : </h1>
       <div className="timeline">
         <div className="outer">
           <div className="timelines">

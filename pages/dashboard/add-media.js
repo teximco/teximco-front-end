@@ -14,7 +14,7 @@ const Addmedia = () => {
   const [subject , setSubject] = useState('')
   const [videoLink , setVideoLink] = useState('')
 
-console.log(catagory)
+
 
   useEffect(()=>{
     console.log(img?.size)
@@ -127,7 +127,7 @@ console.log(catagory)
                 </div>
              
                 {
-                  catagory == 'image' ?     <div className="form">
+                  catagory == 'image' ?   <div className="form">
                   <p className='font-bold'>Image </p>
                   <p className='font-bold'>:</p>
               
@@ -144,7 +144,7 @@ console.log(catagory)
 
             </div>
              
-                </div> :   <div className="form mt-5">
+                </div>  :   <div className="form mt-5">
                   <p className='font-bold'>Embeded Link </p>
                   <p className='font-bold'>:</p>
                   <input type="text" onBlur={(e)=>setVideoLink(e.target.value)} placeholder="Embeded video link" className="input input-bordered input-info w-full max-w-lg" />
@@ -154,9 +154,6 @@ console.log(catagory)
                   error && <small className='text-center block text-red-600'>file size cannot be more than 500kb</small>
                 }
              
-              
-
-
                 <div className="form">
                   <p className='font-bold'>Subject </p>
                   <p className='font-bold'>:</p>
