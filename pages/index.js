@@ -8,6 +8,7 @@ import Arrivals from './components/arrivals'
 import Footer from './components/footer'
 import HomeMedia from './components/homeMedia'
 import Review from './components/review'
+import Brands from './components/brands'
 
 export default function Home() {
   
@@ -31,6 +32,7 @@ export default function Home() {
    <Arrivals></Arrivals>
    <HomeMedia></HomeMedia>
    <Review></Review>
+  <Brands></Brands>
    <Footer></Footer>
     </div>
   )

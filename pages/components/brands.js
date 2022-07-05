@@ -2,7 +2,9 @@ import React from 'react';
 
 const Brands = () => {
     return (
-        <div className='brands'>
+       <div>
+        <h1 className='mt-20 text-center text-3xl font-bold'>Our Global Fashion Brand’s, Promotion and Advertising Brand’s</h1>
+         <div className='brands'>
             <img src="/logos/Untitled-3.png" alt="" />
             <img src="/logos/Untitled-4.png" alt="" />
             <img src="/logos/Untitled-5.png" alt="" />
@@ -37,8 +39,8 @@ const Brands = () => {
             <img src="/logos/Untitled-34.png" alt="" />
             <img src="/logos/Untitled-35.png" alt="" />
             <img src="/logos/Untitled-36.png" alt="" />
-            
         </div>
+       </div>
     );
 };
 
