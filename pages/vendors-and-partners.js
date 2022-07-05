@@ -3,6 +3,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import React from "react";
+import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 
 const FactoryProfile = () => {
@@ -297,7 +298,7 @@ wash approval
 
   </div>
 </div>
-
+<Footer></Footer>
  
 
     </div>

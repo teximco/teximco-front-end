@@ -12,6 +12,7 @@ const CompanyProfile = () => {
                 <title>Company Profile</title>
             </Head>
             <Navbar></Navbar>
+            <img className='company-image' src="/company.jpeg" alt="" />
              <h1 className="text-4xl text-center mt-20 mb-5">Company Profile</h1>
         <div className="table">
           <p className="styled-row">Company Name</p>
@@ -35,7 +36,7 @@ const CompanyProfile = () => {
           <p className="styled-row">US $ 30 Millions</p>
 
           <p>Bank Details</p>
-          <p className="flex justify-between items-center pr-10 bank">
+          <div className="flex justify-between items-center pr-10 bank">
             <>
               01, 02. NRB Commercial Bank Limited <br />
               AB Bank Limited, Uttara Branch
@@ -73,7 +74,7 @@ const CompanyProfile = () => {
               Swift Number: ABBLBDDH020
               <br />
             </>
-          </p>
+          </div>
           <p className="styled-row">No. of Employees</p>
           <p className="styled-row">
             15 Persons, <br />

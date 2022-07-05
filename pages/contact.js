@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
 import Captcha from "react-numeric-captcha";
+import Footer from "./components/footer";
 
 export default function Home() {
   const [error, setError] = useState(false);
@@ -218,6 +219,7 @@ export default function Home() {
           </form>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

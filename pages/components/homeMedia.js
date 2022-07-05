@@ -22,7 +22,7 @@ const HomeMedia = () => {
                 <button className="shop-button2"> <Link href="/media">Find Out Now</Link> </button>
             </div>
             <div className="homemedia-image">
-                <img className='rounded-full' src="mijan01.jpg" alt="" />
+                <img className='rounded-full' src="mijan01.jpeg" alt="" />
             </div>
         </div>
     );

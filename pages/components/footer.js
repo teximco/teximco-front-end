@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
@@ -5,42 +6,45 @@ const Footer = () => {
         <div>
             <footer className="footer p-10 mt-24  text-base-content border-t  border-base-300">
   <div>
-    <span className="footer-title">Services</span> 
-    <a className="link link-hover">Branding</a> 
-    <a className="link link-hover">Design</a> 
-    <a className="link link-hover">Marketing</a> 
-    <a className="link link-hover">Advertisement</a>
+    <span className="footer-title">Products</span> 
+    <Link href="/products/Knitwear" className='link link-hover'>Knitwear</Link>
+    <Link href="/products/Jeanswear" className='link link-hover'>Jeanswear</Link>
+    <Link href="/products/Sweater" className='link link-hover'>Sweater</Link>
+    <Link href="/products/Outerwear" className='link link-hover'>Outerwear</Link>
+    <Link href="/products/Bags-and-Towels" className='link link-hover'>Bags/Towels</Link>
+    <Link href="/products/Hades-and-Caps" className='link link-hover'>Hades/Caps</Link>
+  
   </div> 
   <div>
-    <span className="footer-title">Company</span> 
-    <a className="link link-hover">About us</a> 
-    <a className="link link-hover">Contact</a> 
-    <a className="link link-hover">Jobs</a> 
-    <a className="link link-hover">Press kit</a>
+    <span className="footer-title">About Us</span> 
+    <Link href="/products/who-we-are" className='link link-hover'>Who We Are</Link>
+    <Link href="/products/product-range" className='link link-hover'>Product Range</Link>
+    <Link href="/products/how-we-work" className='link link-hover'>How We Work</Link>
+    <Link href="/products/company-profile" className='link link-hover'>Company Profile</Link>
+ 
   </div> 
   <div>
-    <span className="footer-title">Legal</span> 
-    <a className="link link-hover">Terms of use</a> 
-    <a className="link link-hover">Privacy policy</a> 
-    <a className="link link-hover">Cookie policy</a>
-  </div>
-</footer> 
-<footer className="footer px-10 py-4 text-base-content ">
-  <div className="items-center grid-flow-col">
+  <div className="footer-logo">
   <img
                 src="/Teximco.png"
                 alt=""
 
               />
-    <span>  <h1 className=" text-4xl inline" >TEXIMCO (BD) LTD</h1><br /><p  className="text-xs">Apparel Manufacturer, Expoert, Buying & Sourcing Company</p></span>
+    <span>  <h1 className=" text-4xl inline ml-2" >TEXIMCO (BD) LTD</h1><br /><p  className="text-xs ml-2">Apparel Manufacturer, Expoert, Buying & Sourcing Company</p></span>
+  
   </div> 
-  <div className="md:place-self-center md:justify-self-end">
-    <div className="grid grid-flow-col gap-4">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Condition</a>
+  <br /><br /><br />
+  <h1 className='text-center privacy'>Copyright Ⓒ 2022</h1>
+
+    <div className="privacy">
+
+        <a href="#" className='underline'>Privacy Policy</a>
+        
+        <a href="#" className='underline'>Terms & Condition</a>
     </div>
+
   </div>
-</footer>
+</footer> 
         </div>
     );
 };

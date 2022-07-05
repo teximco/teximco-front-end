@@ -1253,7 +1253,10 @@ nav .links {
     background-position: 50%;
     box-sizing: border-box;
   }
-
+.company-image{
+  height: 500px;
+  width: 100%;
+}
   .bookends {
     position: relative;
     border-width: 5px;
@@ -1566,7 +1569,7 @@ nav .links {
   display: grid;
   grid-template-columns: 3fr 9fr;
 }
-.table p {
+.table p , .bank {
   padding-left: 10px;
   border: 1px solid rgb(147, 147, 147);
   
@@ -1706,5 +1709,46 @@ border: 5px solid white;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.privacy{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+
+/*========================================================================================================================================================================================================= Brands ======================================================================================================================================= */
+
+.brands{
+  text-align: center;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6 , 1fr);
+}
+.brands img {
+  display: block;
+  margin: auto;
+  width: 100px;
+}
+.brands img:hover{
+  filter: grayscale(100);
+}
+
+@media only screen and (max-width:998px) {
+  .brands{
+    grid-template-columns: repeat(5 , 1fr);
+  }
+}
+@media only screen and (max-width:768px) {
+  .brands{
+    grid-template-columns: repeat(3, 1fr);
   }
 }
