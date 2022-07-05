@@ -9,11 +9,9 @@ const HomeMedia = () => {
     return (
         <div className='homemedia-container mt-40'>
             <div className="homemedia-content">
-                <h1 className='text-5xl text-gray-400'>This is Media section</h1>
+                <h1 className='text-5xl text-gray-400'> Mr. Mohammad Mijanur Rahman </h1>
                 <br />
-                <h1 className='text-6xl font-bold'>This is Media section will never
-                        again let you worry
-                        about your plants
+                <h1 className='text-6xl font-bold'>A Visionary Entrepreneurs Managing Director of TEXIMCO (BD) LTD. 
                 </h1>
                
             

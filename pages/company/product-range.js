@@ -12,6 +12,7 @@ const ProductRange = () => {
             <title>Our Product Range</title>
             </Head>
             <Navbar></Navbar>
+            <img className="product-range" src="/product-range.jpeg" alt="" />
             <p className='container pt-16'>
             Circular Knit: T-shirt, Polo shirt, Tang top, Nightwear, Sports wear, Security wear, Vest, Fleece Jacket,
 Hooded Jacket, Leggings, Underwear, Made of Local & Imported fabrics for Men’s, Women’s & Children’s.

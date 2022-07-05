@@ -6,6 +6,7 @@ import {
 import Image from 'next/image'
 
 import image from "../../public/compa.jpg"
+import Link from "next/link";
 
 const Comparison = ({portrait}) => {
   return (
@@ -17,7 +18,7 @@ const Comparison = ({portrait}) => {
           <h6>Be Ready To Change</h6>
           <br />
           <br />
-          <button className="shop-button">Shop Now</button>
+          <button className="shop-button"> <Link href='/contact'> Contact Us </Link></button>
           </span>
         
       </div>

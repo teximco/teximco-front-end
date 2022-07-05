@@ -40,7 +40,7 @@ const WhoWeAre = () => {
             </p>
           </div>
           <div className="what-we-image">
-            <img src="/aboutbg.png" alt="" />
+            <img src="/who-we-are.jpeg" alt="" />
           </div>
         </div>
         <p className="what-do-bottom">
