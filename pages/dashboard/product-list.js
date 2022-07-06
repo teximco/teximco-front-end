@@ -3,13 +3,24 @@ import Link from 'next/link';
 import DashNav from '../components/dashNav';
 import Swal from 'sweetalert2';
 import Head from 'next/head';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import { useRouter } from 'next/router';
 
 
 const Listproduct = () => {
 
   const [medias , setMedias] = useState([])
   const [loding , setLoading] = useState(false)
+  const [user, loading, errorAuth] = useAuthState(auth);
 
+  
+  useEffect(()=>{
+    if(!user){
+      router.push('/dashboard/login')
+    }
+  })
+  const router = useRouter();
   useEffect(()=>{
     setLoading(true)
       fetch("http://localhost:5000/products")
@@ -49,8 +60,8 @@ const Listproduct = () => {
   };
     return (
       <div>
-              <Head>
-            <title>Products List</title>
+          <Head>
+          <title>Products List</title>
           </Head>
           <div className="drawer drawer-mobile">
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -59,52 +70,7 @@ const Listproduct = () => {
 
           
         {
-          loding ?  <div className=" rounded-md p-4 max-w-2xl w-full mx-auto">
-          <div className="animate-pulse flex space-x-96">
-            <div className="flex-1 space-y-6 py-1">
-              <div className="h-2 bg-slate-200 rounded"></div>
-              <div className="h-2 bg-slate-200 rounded"></div>
-              <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-              <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-              <div className="h-2 bg-slate-200 rounded"></div>
-              <div className="h-2 bg-slate-200 rounded"></div>
-              <div className="space-y-6">
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-               
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                </div>
-                <div className="h-2 bg-slate-200 rounded"></div>
-              </div>
-              <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-              <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-              <div className="h-2 bg-slate-200 rounded"></div>
-              <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-              <div className="h-2 bg-slate-200 rounded"></div>
-              <div className="h-2 bg-slate-200 rounded"></div>
-          
-              <div className="space-y-6">
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                  <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                </div>
-                <div className="h-2 bg-slate-200 rounded"></div>
-              </div>
-            </div>
-          </div>
-        </div> :  <div className="overflow-x-auto dashboard-content">
+          loding || loading ?    <svg className="animate-spin mr-3 ..." viewBox="0 0 24 24"> </svg> :  <div className="overflow-x-auto dashboard-content">
           <table className="table table-zebra w-full">
            
             <thead>
@@ -114,9 +80,13 @@ const Listproduct = () => {
                 <th>Image</th>
                 <th>Image 2</th>
                 <th>Action </th>
+            
+   
+         
               </tr>
             </thead>
             <tbody>
+          
           {
             medias.map((media , index) => <tr key={media._id}>
               <th>{index + 1}</th>

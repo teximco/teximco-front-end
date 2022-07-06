@@ -3,13 +3,24 @@ import Link from "next/link";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import Swal from "sweetalert2";
+import auth from "../../firebase.init";
 import DashNav from "../components/dashNav";
 import Navbar from "../components/navbar";
+import { useRouter } from 'next/router';
 
 const Email = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [emails, setEmail] = useState([]);
+  const [user, loading, errorAuth] = useAuthState(auth);
+  const router = useRouter();
+  useEffect(()=>{
+    if(!user){
+      router.push('/dashboard/login')
+    }
+  })
+
   useEffect(() => {
     setIsLoading(true);
     fetch("http://localhost:5000/contact-collection")
@@ -61,52 +72,7 @@ const Email = () => {
           <h1 className="text-5xl text-center">Emails {emails.length} </h1>
 
           {isLoading ? (
-                  <div className=" rounded-md p-4 max-w-2xl w-full mx-auto">
-                  <div className="animate-pulse flex space-x-96">
-                    <div className="flex-1 space-y-6 py-1">
-                      <div className="h-2 bg-slate-200 rounded"></div>
-                      <div className="h-2 bg-slate-200 rounded"></div>
-                      <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-                      <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-                      <div className="h-2 bg-slate-200 rounded"></div>
-                      <div className="h-2 bg-slate-200 rounded"></div>
-                      <div className="space-y-6">
-                        <div className="grid grid-cols-3 gap-4">
-                          <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                       
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                        </div>
-                        <div className="h-2 bg-slate-200 rounded"></div>
-                      </div>
-                      <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-                      <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-                      <div className="h-2 bg-slate-200 rounded"></div>
-                      <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-                      <div className="h-2 bg-slate-200 rounded"></div>
-                      <div className="h-2 bg-slate-200 rounded"></div>
-                  
-                      <div className="space-y-6">
-                        <div className="grid grid-cols-3 gap-4">
-                          <div className="h-2 bg-slate-200 rounded col-span-2"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                          <div className="h-2 bg-slate-200 rounded col-span-1"></div>
-                        </div>
-                        <div className="h-2 bg-slate-200 rounded"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  <svg className="spinner animate-spin mr-3 ..." viewBox="0 0 24 24"> </svg>
           ) : (
             <div className="dashboard-content">
               {emails.map((email) => (

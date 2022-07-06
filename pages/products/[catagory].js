@@ -29,7 +29,7 @@ const Catagory = () => {
 
   const photoByCatagory = photo.filter((photo) => photo.category == catagory);
   const latestCategory = photoByCatagory.reverse();
-
+  console.log(photoByCatagory.length)
   return (
     <div>
       <Head>

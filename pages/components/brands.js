@@ -44,8 +44,9 @@ const Brands = () => {
         <img src="/logos/Untitled-35.png" alt="" />
         <img src="/logos/Untitled-32.png" alt="" />
         <img src="/logos/Untitled-36.png" alt="" />
+        <img src="/logos/Untitled-37.png" alt="" />
+        <img src="/logos/Untitled-38.png" alt="" />
         </div>
-
        </div>
     );
 };

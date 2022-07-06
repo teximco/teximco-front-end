@@ -58,11 +58,7 @@ const WhoWeAre = () => {
           <br />
            We offer you the best <br />
           competitve prices. <br /> Committed with quality. <br /> Always serve you the best
-          delivery date. <br /> Take the load that we can absorb. <br /> TEXIMCO is one of the
-          leading fast growing reputed & well established 100% oriented ready
-          made Garments Manufacturer, Exporter & sourcing Company From dhaka,
-          bangladesh. We are very interested to start business with you & want
-          to extend our business in your country. We have capacity to supply you
+          delivery date. <br /> Take the load that we can absorb. <br />  We have capacity to supply you
           all sort of Garments Production from bangladesh with very competitive
           prices, best Quality & on time delivery also. Fashion, promotion! &
           Advertising T-shirt, Polo shirt, Tang top, leggings, Sweatshirt,

@@ -3,6 +3,9 @@ import Head from 'next/head';
 import React, { useEffect, useRef, useState } from 'react';
 import DashNav from '../components/dashNav';
 import { toast } from 'react-toastify';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import { useRouter } from 'next/router';
 
 const AddProducts = () => {
 
@@ -11,8 +14,8 @@ const AddProducts = () => {
   const [imgSecond , setImgSecond] = useState('')
   const [name , setName] = useState('')
   const [category , setCategory] = useState('')
-
-
+  const [user, loading, errorAuth] = useAuthState(auth);
+  const router = useRouter();
   useEffect(()=>{
     if(img?.size > 500000){
       setError(true)
@@ -21,6 +24,12 @@ const AddProducts = () => {
       setError(false)
     }
  
+  })
+
+  useEffect(()=>{
+    if(!user){
+      router.push('/dashboard/login')
+    }
   })
 
   const handleSubmit = (e) =>{

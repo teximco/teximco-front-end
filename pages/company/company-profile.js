@@ -14,7 +14,7 @@ const CompanyProfile = () => {
             <Navbar></Navbar>
             <img className='company-image' src="/company.jpeg" alt="" />
              <h1 className="text-4xl text-center mt-20 mb-5">Company Profile</h1>
-        <div className="table">
+        <div className="company-table">
           <p className="styled-row">Company Name</p>
           <p className="text-3xl styled-row">TEXIMCO (BD) LTD.</p>
 
@@ -35,17 +35,17 @@ const CompanyProfile = () => {
           <p className="styled-row">Turnover</p>
           <p className="styled-row">US $ 30 Millions</p>
 
-          <p>Bank Details</p>
-          <div className="flex justify-between items-center pr-10 bank">
+          <p>Our Bank Details</p>
+          <div className="flex justify-center items-center  bank">
             <>
-              01, 02. NRB Commercial Bank Limited <br />
-              AB Bank Limited, Uttara Branch
-              <br />
+              01, AB Bank Limited, Uttara Branch <br />
+      
+       
               Uttara Branch
               <br />
               Uttara Model Town Dhaka-1230,
               <br />
-              Bangladesh. *<br />
+              Bangladesh. <br />
               House # 11, Road #14/D
               <br />
               A/C Name: TEXIMCO(BD) LTD.
@@ -56,24 +56,26 @@ const CompanyProfile = () => {
               <br />
             </>
             <hr className="table-hr" />
-            <>
-              01, 02. NRB Commercial Bank Limited <br />
-              AB Bank Limited, Uttara Branch
-              <br />
+            <span className='table-last-column'>
+              02,  NRB Commercial Bank Limited <br />
+     
+    
               Uttara Branch
               <br />
-              Uttara Model Town Dhaka-1230,
+              Masum Plaza, House # 13, Road # 15
               <br />
-              Bangladesh. *<br />
-              House # 11, Road #14/D
+              Rabindra Swarani, Sector # 03 <br />
+              Uttara Model Town, Dhaka 1230
+              <br />
+              Bangladesh.
               <br />
               A/C Name: TEXIMCO(BD) LTD.
               <br />
-              A/C No;: 4020-789027-000
+              A/C No. : 010833300000849
               <br />
-              Swift Number: ABBLBDDH020
+          Swift Number : NARBBBDDHUTR
               <br />
-            </>
+            </span>
           </div>
           <p className="styled-row">No. of Employees</p>
           <p className="styled-row">
@@ -117,10 +119,9 @@ const CompanyProfile = () => {
             Our enlisted factories are cerified by BSCI, SEDEX, WRAP, ILO, ISO,
             Oeko-Tex, GOTS, Accord & Alliance.
           </p>
-          <p className="styled-row">Website</p>
+          <p className="styled-row">Members of</p>
           <p className="styled-row">
-            {" "}
-            <Link href="/">http://www.teximcobd.com</Link>
+          BGMEA
           </p>
         </div>
         <Footer></Footer>

@@ -3,6 +3,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import DashNav from '../components/dashNav';
 import { Editor } from "@tinymce/tinymce-react";
 import { toast } from 'react-toastify';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import { useRouter } from 'next/router';
 
 const Addmedia = () => {
 
@@ -13,9 +16,9 @@ const Addmedia = () => {
   const [name , setName] = useState('')
   const [subject , setSubject] = useState('')
   const [videoLink , setVideoLink] = useState('')
+  const [user, loading, errorAuth] = useAuthState(auth);
 
-
-
+  const router = useRouter();
   useEffect(()=>{
     console.log(img?.size)
 
@@ -27,7 +30,7 @@ const Addmedia = () => {
     }
  
   })
-
+console.log(user)
   const editorRef = useRef(null);
   const log = () => {
     if (editorRef.current) {
@@ -102,6 +105,12 @@ const Addmedia = () => {
     }
 
   }
+
+  useEffect(()=>{
+    if(!user){
+      router.push('/dashboard/login')
+    }
+  })
 
     return (
         <div>

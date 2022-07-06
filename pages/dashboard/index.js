@@ -1,50 +1,36 @@
 import Head from "next/head";
 import Link from "next/link";
-import React, { Outlet, useState } from "react";
-import { CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
+import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { useRouter } from 'next/router';
 import DashNav from "../components/dashNav";
-import Navbar from "../components/navbar";
 
 const Dashboard = () => {
+  const [user, loading, errorAuth] = useAuthState(auth);
 
-  const data = [
-    {
-      month: "Mar",
-      investment: 100000,
-      sell: 241,
-      revenue: 10401,
-    },
-    {
-      month: "Apr",
-      investment: 200000,
-      sell: 423,
-      revenue: 24500,
-    },
-    {
-      month: "May",
-      investment: 500000,
-      sell: 726,
-      revenue: 67010,
-    },
-    {
-      month: "Jun",
-      investment: 500000,
-      sell: 529,
-      revenue: 40405,
-    },
-    {
-      month: "Jul",
-      investment: 600000,
-      sell: 601,
-      revenue: 50900,
-    },
-    {
-      month: "Aug",
-      investment: 700000,
-      sell: 670,
-      revenue: 61000,
-    },
-  ];
+  const router = useRouter();
+  const [photo, setPhoto] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:5000/products")
+      .then((res) => res.json())
+      .then((data) => {
+        setPhoto(data)
+      });
+  }, []);
+
+  const Knitwear = photo.filter((photo) => photo.category == 'Knitwear');
+  const Sweater = photo.filter((photo) => photo.category == 'Sweater');
+  const Outerwear = photo.filter((photo) => photo.category == 'Outerwear');
+  const HadesCaps = photo.filter((photo) => photo.category == 'Hades-and-Caps');
+  const Jeanswear = photo.filter((photo) => photo.category == 'Jeanswear');
+  const Bags = photo.filter((photo) => photo.category == 'Bags-and-Towels');
+
+  useEffect(()=>{
+    if(!user){
+      router.push('/dashboard/login')
+    }
+  })
 
 
   return (
@@ -57,21 +43,44 @@ const Dashboard = () => {
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content bg-gray-100 w-full">
         <DashNav></DashNav>
-
-
-          <div className="chart">
-          <h4>Investment VS Revenue</h4>
-          <LineChart width={450} height={400} data={data}>
-            <XAxis dataKey="month" />
-            <YAxis dataKey="sell" />
-            <Tooltip />
-            <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
-            <Line type="monotone" dataKey="sell" stroke="#8884d8" />
-            <Line type="monotone" dataKey="revenue" stroke="#82ca9d" />
-          </LineChart>
+        
+    <div className="dash-container">
+          <div className="dash-cards knit">
+          <h1 className="text-center text-2xl font-bold">Knitwear</h1>
+          
+          <p className="text-center mt-2 text-3xl">{Knitwear.length}</p>
           </div>
-        </div>
 
+          <div className="dash-cards sweat">
+          <h1 className="text-center text-2xl font-bold">Sweater</h1>
+          <p className="text-center mt-2 text-3xl">{Sweater.length}</p>
+          </div>
+
+          <div className="dash-cards jeans">
+          <h1 className="text-center text-2xl font-bold">Jeanswear</h1>
+          <p className="text-center mt-2 text-3xl">{Jeanswear.length}</p>
+          </div>
+
+          <div className="dash-cards outer">
+          <h1 className="text-center text-2xl font-bold">Outerwear</h1>
+          <p className="text-center mt-2 text-3xl">{Outerwear.length}</p>
+      
+          </div>
+
+    
+          <div className="dash-cards heds">
+          <h1 className="text-center text-2xl font-bold">Hades/Caps</h1>
+          <p className="text-center mt-2 text-3xl">{HadesCaps.length}</p>
+          </div>
+          
+          <div className="dash-cards bags">
+          <h1 className="text-center text-2xl font-bold">Bags/Towels</h1>
+          <p className="text-center mt-2 text-3xl">{Bags.length}</p>
+          </div>
+          </div>
+         
+    </div>
+    
 
         <div className="drawer-side fixed h-full">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
