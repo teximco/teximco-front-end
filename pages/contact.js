@@ -13,10 +13,10 @@ export default function Home() {
 
   const [captchaSuccess, setcaptchaSuccess] = useState(false);
 
-  console.log(captchaSuccess.captchaSuccess);
+ 
 
   useEffect(() => {
-    console.log(img?.size);
+ 
 
     if (img?.size > 500000) {
       setError(true);
@@ -36,16 +36,16 @@ export default function Home() {
     formData.append("name", name);
     formData.append("message", message);
 
-    console.log(emails, img, name, message);
+
     // const aj = ({email , img , name , message})
 
-    fetch("http://localhost:5000/contact", {
+    fetch("https://infinite-spire-29292.herokuapp.com/contact", {
       method: "POST",
       body: formData,
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+    
         event.target.reset();
       });
   };
@@ -156,7 +156,7 @@ export default function Home() {
         <div className="form-container">
           <h1 className="text-center text-5xl mt-2">Get In Touch</h1>
           <form
-            action="http://localhost:5001/contacts"
+            action="https://mysterious-eyrie-78570.herokuapp.com/contacts"
             method="post"
             encType="multipart/form-data"
           >

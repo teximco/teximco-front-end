@@ -1789,6 +1789,12 @@ border: 5px solid white;
   .employee{
     width: 90%;
   }
+  .product-image{
+    height: 100px !important;
+  }
+  .product-image img{
+    height: 100px !important;
+  }
   .what-we-do{
     width: 100%;
   }

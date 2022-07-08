@@ -12,7 +12,7 @@ const Media = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("http://localhost:5000/media")
+    fetch("https://infinite-spire-29292.herokuapp.com/media")
       .then((res) => res.json())
       .then((data) => {
         setMedias(data);

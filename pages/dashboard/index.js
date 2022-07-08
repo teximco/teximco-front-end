@@ -12,7 +12,7 @@ const Dashboard = () => {
   const router = useRouter();
   const [photo, setPhoto] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://infinite-spire-29292.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
         setPhoto(data)

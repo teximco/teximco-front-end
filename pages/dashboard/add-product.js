@@ -45,13 +45,13 @@ const AddProducts = () => {
     formData.append('date' , date)
 
     
-    fetch("http://localhost:5000/products", {
+    fetch("https://infinite-spire-29292.herokuapp.com/products", {
       method: 'POST',
       body: formData
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
+  
         if (data.insertedId) {
           toast(`${name}, You Added a Product Item`, {
             position: "top-center",

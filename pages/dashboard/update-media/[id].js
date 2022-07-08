@@ -20,7 +20,7 @@ const UpdateMedia = () => {
 
     const [medias , setMedias] = useState([])
     useEffect(()=>{
-        fetch(`http://localhost:5000/media`)
+        fetch(`https://infinite-spire-29292.herokuapp.com/media`)
         .then(res=> res.json())
         .then(data => setMedias(data))
     },[id])
@@ -68,10 +68,9 @@ const UpdateMedia = () => {
 
       const imageData = ({ videoReporterName , videoSubject , catagory })
 
-      console.log(imageData)
 
       if( img === '' || img === undefined){
-        fetch(`http://localhost:5000/media-video/${id}` , {
+        fetch(`https://infinite-spire-29292.herokuapp.com/media-video/${id}` , {
           method : 'PUT',
           headers : {
             'content-type' : 'application/json'
@@ -80,7 +79,7 @@ const UpdateMedia = () => {
         })
         .then(res => res.json())
         .then((data) => {
-          console.log(data)
+
           if (data.modifiedCount) {
             toast(`${name}, You have successfully updated the media`, {
               position: "top-center",
@@ -104,7 +103,7 @@ const UpdateMedia = () => {
         formData.append('description', description)
         formData.append('date', date);
     
-        await fetch(`http://localhost:5000/media-image/${id}`, {
+        await fetch(`https://infinite-spire-29292.herokuapp.com/media-image/${id}`, {
           method: "PATCH",
           body: formData
         })
@@ -112,16 +111,16 @@ const UpdateMedia = () => {
         .then((result) => 
         
         {
-          console.log(result)
+   
             if (result.modifiedCount){
-                fetch(`http://localhost:5000/media-image/${id}`, {
+                fetch(`https://infinite-spire-29292.herokuapp.com/media-image/${id}`, {
                 method: "PUT",
                 headers : {
                   'content-type' : 'application/json'
                 },
                 body: JSON.stringify(imageData)
               }).then(res => res.json()).then(data => {
-                console.log(data)
+             
                  if (data.matchedCount) {
                 Swal.fire({
                   position: "center",

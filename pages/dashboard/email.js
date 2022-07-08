@@ -23,7 +23,7 @@ const Email = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("http://localhost:5000/contact-collection")
+    fetch("https://infinite-spire-29292.herokuapp.com/contact-collection")
       .then((res) => res.json())
       .then((data) => {
         setEmail(data);
@@ -42,7 +42,7 @@ const Email = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        const url = `http://localhost:5000/contact-collection/${id}`;
+        const url = `https://infinite-spire-29292.herokuapp.com/contact-collection/${id}`;
         fetch(url, {
           method: "DELETE",
         })

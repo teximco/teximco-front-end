@@ -19,7 +19,7 @@ const Catagory = () => {
   const [photo, setPhoto] = useState([]);
   useEffect(() => {
     setLoaduing(true)
-    fetch("http://localhost:5000/products")
+    fetch("https://infinite-spire-29292.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
         setPhoto(data)
@@ -29,7 +29,7 @@ const Catagory = () => {
 
   const photoByCatagory = photo.filter((photo) => photo.category == catagory);
   const latestCategory = photoByCatagory.reverse();
-  console.log(photoByCatagory.length)
+
   return (
     <div>
       <Head>

@@ -15,7 +15,7 @@ const Medialist = () => {
 
   useEffect(()=>{
     setLoading(true)
-      fetch("http://localhost:5000/media")
+      fetch("https://infinite-spire-29292.herokuapp.com/media")
       .then(res=> res.json())
       .then(data => {
         setMedias(data)
@@ -35,7 +35,7 @@ const Medialist = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        const url = `http://localhost:5000/media/${id}`;
+        const url = `https://infinite-spire-29292.herokuapp.com/media/${id}`;
         fetch(url, {
           method: "DELETE",
         })

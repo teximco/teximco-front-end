@@ -11,7 +11,7 @@ const MediaDetails = () => {
     const [medias , setMedias] = useState([])
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/media`)
+        fetch(`https://infinite-spire-29292.herokuapp.com/media`)
         .then(res=> res.json())
         .then(data => setMedias(data))
     },[])
@@ -19,7 +19,7 @@ const MediaDetails = () => {
     const find = medias.find(media => media._id == id)
  
 
-    console.log(find)
+  
     return (
         <div>
             <Head>

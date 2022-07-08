@@ -23,7 +23,7 @@ const Listproduct = () => {
   const router = useRouter();
   useEffect(()=>{
     setLoading(true)
-      fetch("http://localhost:5000/products")
+      fetch("https://infinite-spire-29292.herokuapp.com/products")
       .then(res=> res.json())
       .then(data => {
         setMedias(data)
@@ -31,6 +31,7 @@ const Listproduct = () => {
       })
 
   },[ ])
+  
 
   const handleDelete = (id) => {
     Swal.fire({
@@ -43,7 +44,7 @@ const Listproduct = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://infinite-spire-29292.herokuapp.com/products/${id}`;
         fetch(url, {
           method: "DELETE",
         })
@@ -82,7 +83,6 @@ const Listproduct = () => {
                 <th>Action </th>
             
    
-         
               </tr>
             </thead>
             <tbody>
@@ -91,8 +91,8 @@ const Listproduct = () => {
             medias.map((media , index) => <tr key={media._id}>
               <th>{index + 1}</th>
               <td>{media.name}</td>
-              <td> <img width={80} src={`data:image/png;base64,${media?.image}`} /> </td>
-              <td> <img width={80} src={`data:image/png;base64,${media?.image2}`} /> </td>
+              <td className="product-image"> <img width={80} style={{height: '80px'}}  src={`data:image/png;base64,${media?.image}`} /> </td>
+              <td> <img width={80} style={{height: '80px'}}  src={`data:image/png;base64,${media?.image2}`} /> </td>
               <td>
 
                  <button onClick={()=>handleDelete(media._id)} className='bg-red-600 p-1 border rounded'>Delete</button></td>

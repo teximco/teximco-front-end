@@ -5,7 +5,7 @@ import auth from '../../firebase.init';
 
 const DashNav = () => {
   const [user, loading, error] = useAuthState(auth);
-  console.log(user?.email)
+ 
     return (
         <div>
     <div className="navbar bg-base-100">

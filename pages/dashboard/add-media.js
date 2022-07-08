@@ -20,7 +20,7 @@ const Addmedia = () => {
 
   const router = useRouter();
   useEffect(()=>{
-    console.log(img?.size)
+
 
     if(img?.size > 500000){
       setError(true)
@@ -30,11 +30,11 @@ const Addmedia = () => {
     }
  
   })
-console.log(user)
+
   const editorRef = useRef(null);
   const log = () => {
     if (editorRef.current) {
-      console.log(editorRef.current.getContent());
+    
       setDescription(editorRef.current.getContent());
     }
   };
@@ -47,7 +47,7 @@ console.log(user)
     const videoData = ({description , name , subject , videoLink , date , catagory })
 
     if( img === '' || img === undefined){
-      fetch("http://localhost:5000/media-video" , {
+      fetch("https://infinite-spire-29292.herokuapp.com/media-video" , {
         method : 'POST',
         headers : {
           'content-type' : 'application/json'
@@ -82,7 +82,7 @@ console.log(user)
       formData.append('date', date);
       formData.append('catagory', catagory);
   
-      fetch("http://localhost:5000/media-image", {
+      fetch("https://infinite-spire-29292.herokuapp.com/media-image", {
         method: 'POST',
         body: formData
       })
