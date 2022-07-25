@@ -13,7 +13,7 @@ const Arrivals = () => {
           <div className="image">
             <img
               src="/outerwear.jpg"
-              alt=""
+              alt="erwear.jpg"
             />
           </div>
           <div className="card-content">
@@ -38,7 +38,7 @@ const Arrivals = () => {
           <div className="image">
             <img
               src="/jacket.png"
-              alt=""
+              alt="jacket.png"
             />
           </div>
           <div className="card-content">
@@ -63,7 +63,7 @@ const Arrivals = () => {
           <div className="image">
             <img
               src="/knitwear.png"
-              alt=""
+              alt="knitwear.png"
             />
           </div>
           <div className="card-content">
@@ -88,7 +88,7 @@ const Arrivals = () => {
           <div className="image">
             <img
               src="/caps.png"
-              alt=""
+              alt="caps.png"
             />
           </div>
           <div className="card-content">
@@ -113,7 +113,7 @@ const Arrivals = () => {
           <div className="image">
             <img
               src="/jeanswear.png"
-              alt=""
+              alt="jeanswear.png"
             />
           </div>
           <div className="card-content">
@@ -138,7 +138,7 @@ const Arrivals = () => {
           <div className="image">
             <img
               src="/bags.jpg"
-              alt=""
+              alt="bags.jpg"
             />
           </div>
           <div className="card-content">
