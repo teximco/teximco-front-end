@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 
 const Addmedia = () => {
 
-  const [catagory , setCatagory] = useState('')
+  const [catagory , setCatagory] = useState('image')
   const [description, setDescription] = useState("");
   const [error , setError] = useState(false)
   const [img , setImg] = useState('')

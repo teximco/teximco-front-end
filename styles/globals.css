@@ -585,7 +585,7 @@ nav .links {
     width: 300px;
     background: #fff;
     overflow: hidden;
-    
+    border: 1px solid lightgray;
     transition: all 0.3s ease;
 
     border-radius: 25px;
