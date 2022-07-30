@@ -23,7 +23,7 @@ const CompanyProfile = () => {
             House # 72, Road # 15, Sector # 11 <br />
             Uttara Model Town, Dhaka-1230, Bangladesh. <br />
             Email: info@teximcobd.com <br />
-            Contact # +88 01818652764, +88 01914682466 (WhatsApp) <br />
+            Contact # +88 01818652764 <br />
           </p>
           <p className="styled-row">Established Year</p>
           <p className="styled-row">2009</p>
@@ -36,28 +36,30 @@ const CompanyProfile = () => {
           <p className="styled-row">US $ 30 Millions</p>
 
           <p>Our Bank Details</p>
-          <div className="flex justify-center items-center  bank">
-            <>
-              01, AB Bank Limited, Uttara Branch <br />
+          <div className="flex justify-center items-center text-2xl  bank">
+            <span className='table-first-column'>
+              AB Bank Limited <br />
       
        
               Uttara Branch
               <br />
+              House # 11, Road #14/D
+              <br />
               Uttara Model Town Dhaka-1230,
               <br />
               Bangladesh. <br />
-              House # 11, Road #14/D
-              <br />
+              
+            
               A/C Name: TEXIMCO(BD) LTD.
               <br />
               A/C No;: 4020-789027-000
               <br />
               Swift Number: ABBLBDDH020
               <br />
-            </>
+            </span>
             <hr className="table-hr" />
             <span className='table-last-column'>
-              02,  NRB Commercial Bank Limited <br />
+              NRB Commercial Bank Limited <br />
      
     
               Uttara Branch
@@ -111,8 +113,7 @@ const CompanyProfile = () => {
           </p>
           <p className="styled-row">Nature of Business</p>
           <p className="styled-row">
-            100% export oriented- Apparel/Clothing Exporter, Buying and Sourcing
-            company
+          100% Export Oriented Readymade Garments Manufacturer, Exporter, Buying and Sourcing
           </p>
           <p>Social Ethics</p>
           <p>
@@ -121,7 +122,7 @@ const CompanyProfile = () => {
           </p>
           <p className="styled-row">Members of</p>
           <p className="styled-row">
-          BGMEA
+          DNCC: 20117, BGMEA: AM - 1519, DOT: I - 1153, ERC: 260326210649920
           </p>
         </div>
         <Footer></Footer>

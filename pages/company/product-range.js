@@ -14,19 +14,26 @@ const ProductRange = () => {
             <h1 className='text-center text-5xl mt-5 mb-5'>Product Range</h1>
             <img className="product-range" src="/product-range.jpeg" alt="" />
             <p className='container pt-5'>
-            Circular Knit: T-shirt, Polo shirt, Tang top, Nightwear, Sports wear, Security wear, Vest, Fleece Jacket,
+            <strong>Circular Knit:</strong> T-shirt, Polo shirt, Tang top, Nightwear, Sports wear, Security wear, Vest, Fleece Jacket,
             Hooded Jacket, Leggings, Underwear, Made of Local & Imported fabrics for Men’s, Women’s & Children’s.
             <br />
-            Sweater, Pullover, Cardigan & Vest: (3, 5, 7, 10 & 12 Gauge) Made of: <br />
             <br />
-            Acrylic, Cotton, Acrylic/Cotton, Acrylic/Wool, Cotton Like, Acrylic Cashmere like, Acrylic Mohair Like/Tamu, 
+           <strong> Sweater, Pullover, Cardigan & Vest: (3, 5, 7, 10 & 12 Gauge) Made of:</strong> Acrylic, Cotton, 
+            Acrylic/Cotton, Acrylic/Wool, Cotton Like, Acrylic Cashmere like, Acrylic Mohair Like/Tamu, 
             Cotton/Nylon, Acrylic/Nylon, Acrylic Bright, Chenille, Tube, Tape & few more basic blended Local & 
-            <br />
+       
             Imported yarns for Men’s, Ladies, Boy’s, Girls & Kids. <br />
             <br />
-            ee Woven, Denim & Non-Denim: Jeans Pant, Jacket (Basic/Fancy), Trouser, Chino, shorts, Cargo Pants,
+            <strong>Woven, Denim & Non-Denim:</strong> Jeans Pant, Jacket (Basic/Fancy), Trouser, Chino, shorts, Cargo Pants,
             Shirt (Casual & Formal), Tailored pant, Blazer, Men’s, Ladies, Boy’s, Girls & Kids Top-bottom made of: Local 
             & Imported denim & non-denim fabric. <br />
+            <br />
+            <br />
+            <strong>Bags and Towels :</strong> description will be added soon...
+            <br />
+            <br />
+            <strong>Hades and Caps :</strong> description will be added soon...
+            <br />
             <br />
             We are providing professional guidance in out-sourcing of ready-made garment production in the most 
             competitive markets in Asia. We have more than 25 out sourcing factories incl. (knit, woven, sweaters and

@@ -80,16 +80,16 @@ const Navbar = () => {
                 </li>
               
                 <li>
-                  <Link href="/products/Bags-and-Towels">Bags/Towels</Link>
+                  <Link href="/products/Bags-and-Towels">Bags and Towels</Link>
                 </li>
                 <li>
-                  <Link href="/products/Hades-and-Caps">Hades/Caps</Link>
+                  <Link href="/products/Hades-and-Caps">Hades and Caps</Link>
                 </li>
               </ul>
             </li>
            
             <li style={{color  : sticky ? "white" : "black"}}>
-              <Link href="/vendors-and-partners"  style={{color  : sticky ? "white" : "black"}}>Vendor/Partner</Link>
+              <Link href="/vendors-and-partners"  style={{color  : sticky ? "white" : "black"}}>Vendor and Partner</Link>
             </li>
             <li style={{color  : sticky ? "white" : "black"}}>
               <Link href="/media">Media</Link>

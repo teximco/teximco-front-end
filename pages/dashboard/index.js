@@ -61,7 +61,7 @@ const Dashboard = () => {
           <p className="text-center mt-2 text-3xl">{Jeanswear.length}</p>
           </div>
 
-          <div className="dash-cards outer">
+          <div className="dash-cards outwear">
           <h1 className="text-center text-2xl font-bold">Outerwear</h1>
           <p className="text-center mt-2 text-3xl">{Outerwear.length}</p>
       

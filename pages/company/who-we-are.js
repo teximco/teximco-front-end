@@ -32,11 +32,8 @@ const WhoWeAre = () => {
                 Bscic Area covrering 12 Production Line.
               </span>
               <br />
-              Our entire operation is performed by experienced staffs with their
-              utmost dedication where customer’s satisfaction is guaranteed.
-              With our complete effort and understanding the core concepts of
-              this industry we have successfully established ourselves as the
-              supplier among a number of companies.
+             
+          
             </p>
           </div>
           <div className="what-we-image">
@@ -44,6 +41,16 @@ const WhoWeAre = () => {
           </div>
         </div>
         <p className="what-do-bottom">
+        We have capacity to supply you
+          all sort of Garments Production from bangladesh with very competitive
+          prices, best Quality & on time delivery also. Fashion, promotion! &
+          Advertising T-shirt, Polo shirt, Tang top, leggings, Sweatshirt,
+          Hoodies, Trouser, Sweater, pullover, Cardigan, vest, jeans pant,
+          Shirt, Shorts, cargo pant, Hoody jacket, Outerwear jacket, Windbreaker
+          jacket, Work wear dress, Casual shirt, Formal shirt, Chino pant, Hot
+          pant Underwear for men’s, Cap, Twoels ladies & Children’s to use local
+          and imported fabrics/materials. <br />
+      
           In order to offer you our best & competive price, all we need to know
           your specifications and purchase quantity. We keep the cost base low
           by offering the most workable selling price. That’s why we are looking
@@ -56,17 +63,9 @@ const WhoWeAre = () => {
           <br />
           <span className="font-bold">The reason behind to choose us as a supplier:</span>
           <br />
-           We offer you the best <br />
-          competitve prices. <br /> Committed with quality. <br /> Always serve you the best
-          delivery date. <br /> Take the load that we can absorb. <br />  We have capacity to supply you
-          all sort of Garments Production from bangladesh with very competitive
-          prices, best Quality & on time delivery also. Fashion, promotion! &
-          Advertising T-shirt, Polo shirt, Tang top, leggings, Sweatshirt,
-          Hoodies, Trouser, Sweater, pullover, Cardigan, vest, jeans pant,
-          Shirt, Shorts, cargo pant, Hoody jacket, Outerwear jacket, Windbreaker
-          jacket, Work wear dress, Casual shirt, Formal shirt, Chino pant, Hot
-          pant Underwear for men’s, Cap, Twoels ladies & Children’s to use local
-          and imported fabrics/materials.
+           We offer you the best.
+          competitve prices. Committed with quality. Always serve you the best
+          delivery date.Take the load that we can absorb. 
         </p>
         <Footer></Footer>
         </div>

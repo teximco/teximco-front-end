@@ -15,7 +15,7 @@ const HowWeWork = () => {
         <div className="outer">
           <div className="timelines">
             <div className="info">
-              <h3 className="timelines-title text-2xl">Inquiry</h3>
+              <h3 className="timelines-title text-3xl font-bold mb-5">Inquiry</h3>
               <p>
               Once we receive your product specification
         such as - sketch, design & measurement, fabric construction & color, or
@@ -28,7 +28,7 @@ const HowWeWork = () => {
           </div>
           <div className="timelines">
             <div className="info">
-              <h3 className="timelines-title text-2xl">Design Developments</h3>
+              <h3 className="timelines-title  text-3xl font-bold mb-5">Design Developments</h3>
               <p>
               We develops prototype patterns
         and samples, approval samples and patterns, grading to all requisite
@@ -41,7 +41,7 @@ const HowWeWork = () => {
 
           <div className="timelines">
             <div className="info">
-              <h3 className="timelines-title text-2xl">Sample Making</h3>
+              <h3 className="timelines-title  text-3xl font-bold mb-5">Sample Making</h3>
               <p>
               Upon acceptance of initial price we
                 develop the samples from our sample section according to the required
@@ -53,7 +53,7 @@ const HowWeWork = () => {
 
           <div className="timelines">
             <div className="info">
-              <h3 className="timelines-title text-2xl">Factory Sourcing</h3>
+              <h3 className="timelines-title  text-3xl font-bold mb-5">Factory Sourcing</h3>
               <p>
               We have own kint Garments
         Manufacturing unti Associated some kint, Woven, Sweater, jeans, Towel,
@@ -68,7 +68,7 @@ const HowWeWork = () => {
 
           <div className="timelines">
             <div className="info">
-              <h3 className="timelines-title text-2xl"> Production Control </h3>
+              <h3 className="timelines-title  text-3xl font-bold mb-5"> Production Control </h3>
               <p>
               With experienced and skilled
         on-site quality control teams, we are able to provide our partners with
@@ -80,7 +80,7 @@ const HowWeWork = () => {
 
           <div className="timelines">
             <div className="info">
-              <h3 className="timelines-title text-2xl"> Quality Control </h3>
+              <h3 className="timelines-title  text-3xl font-bold mb-5"> Quality Control </h3>
               <p>
               We have experienced technicians who
         monitor and control the quality at factories and discuss with customers
@@ -93,7 +93,7 @@ const HowWeWork = () => {
 
           <div className="timelines">
             <div className="info">
-              <h3 className="timelines-title text-2xl"> Minimum Order Qty (MOQ) </h3>
+              <h3 className="timelines-title  text-3xl font-bold mb-5"> Minimum Order Qty (MOQ) </h3>
               <p>
               Most of the styles, we need
         minimum quantity, which is different according to different styles and
@@ -104,7 +104,7 @@ const HowWeWork = () => {
 
           <div className="timelines">
             <div className="info">
-              <h3 className="timelines-title text-2xl"> Lead Time </h3>
+              <h3 className="timelines-title  text-3xl font-bold mb-5"> Lead Time </h3>
               <p>
               As our production facilities are totally
         vertical operations, this enables us to maximize business opportunities
@@ -119,7 +119,7 @@ const HowWeWork = () => {
 
           <div className="timelines">
             <div className="info">
-              <h3 className="timelines-title text-2xl"> Beginning of Order Execution </h3>
+              <h3 className="timelines-title  text-3xl font-bold mb-5"> Beginning of Order Execution </h3>
               <p>
               Once the L/C is received
         in our bank we purchase the required fabric or yarn and make required
@@ -132,7 +132,7 @@ const HowWeWork = () => {
 
           <div className="timelines">
             <div className="info">
-              <h3 className="timelines-title text-2xl"> Order Execution </h3>
+              <h3 className="timelines-title  text-3xl font-bold mb-5"> Order Execution </h3>
               <p>
               We closely monitor the orders at all
         stages from sampling to shipment. This includes critical path
@@ -147,7 +147,7 @@ const HowWeWork = () => {
           
           <div className="timelines">
             <div className="info">
-              <h3 className="timelines-title text-2xl"> Final Inspection </h3>
+              <h3 className="timelines-title  text-3xl font-bold mb-5"> Final Inspection </h3>
               <p>
               The consignment is finally checked,
               packed under close supervision of our QA team according to AQL Standard.

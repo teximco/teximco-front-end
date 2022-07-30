@@ -14,7 +14,7 @@ const FactoryProfile = () => {
       </Head>
       <Navbar></Navbar>
       <div>
-        <h1 className="text-2xl mt-10 mb-10 ml-10">Our key Vendor/Partners</h1>
+        <h1 className=" mt-10 text-4xl font-bold mb-10 ml-10">Our key Vendor and Partners</h1>
         <div className="sections-factory">
           <div className="factory-image">
             <img src="Screenshot_7.png" alt="" />
@@ -25,7 +25,7 @@ const FactoryProfile = () => {
               Yearly Turn Over USD 22 0 Million <br />
               Product Category: Knit’s Garments
               <br />
-              Production Capacity: 2.5 Million
+              Production Capacity: 2.5 Million (Monthly)
               <br />
               Number of Machines- 1,350 Pcs
               <br />
@@ -42,7 +42,7 @@ const FactoryProfile = () => {
             <p>
               Yearly Turn Over USD 20 Million <br />
               Product Category: Sweater, Pullover,Vest Etc. <br />
-              Production Capacity: 10,00 00 | Per month <br />
+              Production Capacity: 10,00 00 (Monthly) <br />
               Number of Machines- 450 Pcs <br />
               Manpower: 600 Person <br />
               Complinace Certificats: ILO, BSC, WRAP,SEDEX <br />
@@ -60,11 +60,11 @@ const FactoryProfile = () => {
           <div className="factory-content ml-10">
             <h1 className="font-bold">KAC Fashion Ltd.</h1>
             <p>
-              Yearly Turn Over USD 22 5 Million <br />
+              Yearly Turn Over USD 22.5 Million <br />
               Product Category: Knit’s Garments <br />
-              Production Capacity: 1.5 Millions <br />
+              Production Capacity: 22.5 Millions (Monthly) <br />
               Number of Machines- 750 Pcs <br />
-              Manpower:3000Person <br />
+              Manpower:1,200 Person <br />
               Complinace Certificats: Accord, BSCI, WRAP,SEDEX <br />
             </p>
           </div>
@@ -74,12 +74,12 @@ const FactoryProfile = () => {
           <div className="factory-content text-right md:mr-10">
             <h1 className="font-bold">Uttara Knit Wear</h1>
             <p>
-              Yearly Turn Over USD 60 Million®l <br />
+              Yearly Turn Over USD 60 Million<br />
               Product Category: Knit 3 Woven
               <br />
               Production Capacity: 1.5 Millions Pcs
               <br />
-              Number of Machines- 1050 Pcs
+              Number of Machines- 750 Pcs
               <br />
               Manpower: 1,050 Person
               <br />
@@ -123,7 +123,7 @@ const FactoryProfile = () => {
               <br />
               Production Line: 12
               <br />
-              Number of Machines- 750 Pcs
+              Number of Machines- 420 Pcs
               <br />
               Manpower: 550 Person
               <br />
@@ -160,23 +160,45 @@ const FactoryProfile = () => {
         <hr className="m-10 bookends" />
         <div className="sections-factory">
           <div className="factory-content text-right md:mr-10">
-            <h1 className="font-bold">Target Denim & Casual Wear</h1>
+            <h1 className="font-bold">Silken Sewing LTD </h1>
             <p>
-              Yearly Turn Over USC 90 Millions <br />
-              Product Category: Jeans, Trouser, Jacket etc
+            Yearly Turn Over USD 60 Million<br />
+              Product Category: Knit 3 Woven
               <br />
-              Production Line: 30
+              Production Capacity: 1.5 Millions Pcs
               <br />
-              Number of Machines- 800 Pcs
+              Number of Machines- 750 Pcs
               <br />
-              Manpower: 4000 Person
+              Manpower: 1,050 Person
               <br />
-              Complinace Certificats: Accord, BSC, WRAP,SEDEX
+              Complinace Certificats: Accord, BSCI, WRAP,SEDEX
               <br />
             </p>
           </div>
           <div className="factory-image">
-            <img src="Screenshot9.png" alt="" />
+            <img width={400} src="silken.jpg" alt="" />
+          </div>
+        </div>
+        <hr className="m-10 bookends" />
+        <div className="sections-factory">
+          <div className="factory-image">
+            <img width={400} src="cotton.jpg" alt="" />
+          </div>
+          <div className="factory-content ml-10">
+            <h1 className="font-bold">Cotton Zone Knit Composite LTD</h1>
+            <p>
+            Yearly Turn Over USD 20 Million <br />
+              Product Category: Knit’s Garments
+              <br />
+              Production Line: 12
+              <br />
+              Number of Machines- 420 Pcs
+              <br />
+              Manpower: 550 Person
+              <br />
+              Complinace Certificats: Accord, BSC, WRAP,SEDEX
+              <br />
+            </p>
           </div>
         </div>
       </div>

@@ -1,9 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;600&family=Raleway&family=Roboto&family=Source+Sans+Pro&family=Tai+Heritage+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Oswald&family=Poppins:wght@400;600&family=Raleway&family=Roboto&family=Source+Sans+Pro&family=Tai+Heritage+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Oswald&family=Poppins:wght@400;600&family=Raleway&family=Roboto&family=Source+Sans+Pro&display=swap');
+
 html,
 * {
   margin: 0;
@@ -11,7 +10,13 @@ html,
   margin-left: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  /* 
+  /* font-family: 'Roboto', sans-serif; */
+}
+p{
+  font-size: 24px;
+  /* font-family: 'Roboto', sans-serif;  */
+  font-family: "Poppins", sans-serif !important;
 }
 .navbar {
   padding-top: 30px;
@@ -1006,6 +1011,7 @@ nav .links {
 .modal-div{
   background: rgba(193, 193, 193, 0.738);
 }
+
 .modal-boxs{
   height: 600px;
   display: flex;
@@ -1032,7 +1038,7 @@ nav .links {
 .management-card{
   text-align: center;
   width: 100%;
-  height:180px;
+  height:200px;
   background: #ffffff;
   box-shadow:  7px 7px 13px #cccccc,
                -7px -7px 13px #f4f4f4;
@@ -1108,7 +1114,7 @@ nav .links {
 .knit{
   background: rgb(243, 205, 205);
 }
-.outer{
+.outwear{
   background: rgb(214, 255, 214);
 }
 .sweat{
@@ -1276,6 +1282,8 @@ nav .links {
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
+  
+
  
 }
 .employees{
@@ -1474,7 +1482,7 @@ nav .links {
 .info {
   display: flex;
   flex-direction: column;
-  background: #333;
+  background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 10px;
@@ -1630,6 +1638,7 @@ nav .links {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .what-do-bottom{
   margin-left: 5%;
@@ -1641,6 +1650,10 @@ nav .links {
 }
 .what-we-image{
   width: 50%;
+  height: 430px;
+}
+.what-we-image img{
+  height: 480px;
 }
 .about-banner{
   height: 400px;
@@ -1653,7 +1666,7 @@ nav .links {
 }
 
 .table-last-column{
-  margin-right: 142px;
+  margin-right: 102px;
 }
 
 .company-table{
@@ -1671,7 +1684,8 @@ nav .links {
   background: rgb(211, 211, 211);
 }
 .table-hr{
-  margin-left: 180px;
+  margin-left: 100px;
+  margin-right: 20px;
   height: 90%;
   border: 1px solid rgb(188, 188, 188);
 }
@@ -1827,7 +1841,9 @@ border: 5px solid white;
   width: 100%;
 }
 
-
+.footer a {
+  font-size: 18px;
+}
 
 
 @media only screen and (max-width:998px) {
