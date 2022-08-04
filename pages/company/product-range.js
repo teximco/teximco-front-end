@@ -6,14 +6,15 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const ProductRange = () => {
     return (
-        <div>
+  <>
+        <div className='product-range-container'>
             <Head>
             <title>Our Product Range</title>
             </Head>
             <Navbar></Navbar>
             <h1 className='text-center text-5xl mt-5 mb-5'>Product Range</h1>
             <img className="product-range" src="/product-range.jpeg" alt="" />
-            <p className='container pt-5'>
+            <p className='container product-range-p pt-5'>
             <strong>Circular Knit:</strong> T-shirt, Polo shirt, Tang top, Nightwear, Sports wear, Security wear, Vest, Fleece Jacket,
             Hooded Jacket, Leggings, Underwear, Made of Local & Imported fabrics for Men’s, Women’s & Children’s.
             <br />
@@ -41,8 +42,10 @@ const ProductRange = () => {
             satisfaction, we work on followed from the time of developing samples until the ready-made garment is  
             loaded into the container.
             </p>
-            <Footer></Footer>
+            
         </div>
+        <Footer></Footer>
+        </>
     );
 };
 

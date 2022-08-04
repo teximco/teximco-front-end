@@ -5,7 +5,8 @@ import Navbar from "../components/navbar";
 
 const HowWeWork = () => {
   return (
-    <div>
+<>
+<div className="how-we-work">
       <Head>
         <title>How We Work</title>
       </Head>
@@ -160,8 +161,10 @@ const HowWeWork = () => {
         </div>
       </div>
 
-      <Footer></Footer>
+  
     </div>
+    <Footer></Footer>
+</>
   );
 };
 

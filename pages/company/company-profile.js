@@ -12,6 +12,7 @@ const CompanyProfile = () => {
                 <title>Company Profile</title>
             </Head>
             <Navbar></Navbar>
+            <div className='company-profile-container'>
             <img className='company-image' src="/company.jpeg" alt="" />
              <h1 className="text-4xl text-center mt-20 mb-5">Company Profile</h1>
         <div className="company-table">
@@ -125,6 +126,7 @@ const CompanyProfile = () => {
           DNCC: 20117, BGMEA: AM - 1519, DOT: I - 1153, ERC: 260326210649920
           </p>
         </div>
+            </div>
         <Footer></Footer>
         </>
     );

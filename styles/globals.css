@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Oswald&family=Poppins:wght@400;600&family=Raleway&family=Roboto&family=Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Oswald&family=Poppins:wght@400;600&family=Raleway&family=Roboto&display=swap');
 html,
 * {
   margin: 0;
@@ -14,9 +13,9 @@ html,
   /* font-family: 'Roboto', sans-serif; */
 }
 p{
-  font-size: 24px;
-  /* font-family: 'Roboto', sans-serif;  */
-  font-family: "Poppins", sans-serif !important;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif; 
+  font-family: 'Fjalla One', sans-serif;
 }
 .navbar {
   padding-top: 30px;
@@ -1414,17 +1413,23 @@ nav .links {
 /* Timeline Container */
 .timeline {
   display: block;
-  background: white;
+  background: rgba(255, 255, 255, 0.779);
   margin: 20px 5% 20px 10%;
   padding: 20px;
-  
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 /* Card container */
 .timelines {
   position: relative;
-  max-width: 90%;
+  /* max-width: 90%; */
   
+}
+
+.company-table{
+  background: rgba(255, 255, 255, 0.572);
 }
 
 /* setting padding based on even or odd */
@@ -1482,8 +1487,10 @@ nav .links {
 .info {
   display: flex;
   flex-direction: column;
-  background: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  /* background: rgba(255, 255, 255, 0.796); */
+  /* color: rgb(255, 255, 255); */
+  color: black;
+  font-weight: bold;
   border-radius: 10px;
   padding: 10px;
 }
@@ -1630,20 +1637,58 @@ nav .links {
     margin: 5px 0;
     justify-content: space-between;
   }
+.product-range-p {
+  background: rgba(255, 255, 255, 0.796);
+  padding-bottom: 20px;
+}
+.how-we-work{
+  background: url('../public/how-we-work.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product-range-container{
+  background: url('../public/whyweare.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-
+}
+.company-profile-container{
+  background: url('../public/company-bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.who-we-container{
+  background: url('../public/whyweare.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .whatwedo{
-  margin: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
   display: flex;
+  padding-top: 20px;
   justify-content: center;
   align-items: center;
+background: rgba(255, 255, 255, 0.661);
   
 }
 .what-do-bottom{
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: -40px;
+  margin-top: -65px;
+  padding-top: 10px;
+  background: rgba(255, 255, 255, 0.578);
 }
 .what-we-do{
   width: 50%;
@@ -1653,7 +1698,7 @@ nav .links {
   height: 430px;
 }
 .what-we-image img{
-  height: 480px;
+  height: 430px;
 }
 .about-banner{
   height: 400px;
@@ -1749,6 +1794,9 @@ border: 5px solid white;
   .what-we-do{
     width: 100%;
   }
+  .what-do-bottom{
+    padding-top: 50px;
+  }
   .what-we-image{
     width: 100%;
   }
@@ -1762,6 +1810,7 @@ border: 5px solid white;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
   }
+ 
 }
 @media only screen and (max-width:768px){
   .bottom-arrow{
@@ -1777,6 +1826,9 @@ border: 5px solid white;
 
     margin: 20px 2% 20px 6%;
     
+  }
+  .what-do-bottom{
+    padding-top: 50px;
   }
   .timeline2 {
     margin: 20px 2% 20px 6%;
