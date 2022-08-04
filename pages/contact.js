@@ -81,7 +81,7 @@ export default function Home() {
             Position: Chairman
             <br />
             E-mail:{" "}
-            <a href="mailto:farjana@teximcobd.com">farjana@teximcobd.com</a>
+            <a href="mailto:farjana@teximcobd.com">farjan@teximcobd.com</a>
             <br />
           </p>
         </div>
