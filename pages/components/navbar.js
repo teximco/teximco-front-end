@@ -26,7 +26,7 @@ const Navbar = () => {
 
               />
               <span>
-              <h1 className="text-white text-4xl inline" style={{ color : sticky ? "white" : "black" }}>TEXIMCO (BD) LTD</h1>
+              <h1 className="text-white text-5xl inline" style={{ color : sticky ? "white" : "black" }}>TEXIMCO (BD) LTD</h1>
               <p  className="text-white text-xs" style={{ color : sticky ? "white" : "black" }}>Apparel Manufacturer, Expoert, Buying & Sourcing Company</p>
               </span>
             </a>
