@@ -21,7 +21,7 @@ const CompanyProfile = () => {
 
           <p>Registered & Corporate office Address</p>
           <p className="">
-            House # 72, Road # 15, Sector # 11 <br />
+            House # 72(1st & 2nd Floor), Road # 15, Sector # 11 <br />
             Uttara Model Town, Dhaka-1230, Bangladesh. <br />
             Email: info@teximcobd.com <br />
             Contact # +88 01818652764 <br />
@@ -30,7 +30,7 @@ const CompanyProfile = () => {
           <p className="styled-row">2009</p>
           <p>Contact Person</p>
           <p>
-            Md. Mijanur Rahman (Managing Director) <br />
+            Mohammad Mijanur Rahman (Managing Director) <br />
             Email: mijan@teximcobd.com
           </p>
           <p className="styled-row">Turnover</p>
@@ -65,9 +65,8 @@ const CompanyProfile = () => {
     
               Uttara Branch
               <br />
-              Masum Plaza, House # 13, Road # 15
-              <br />
-              Rabindra Swarani, Sector # 03 <br />
+              House # 13, Road # 15
+              Sector # 03 <br />
               Uttara Model Town, Dhaka 1230
               <br />
               Bangladesh.
@@ -110,7 +109,7 @@ const CompanyProfile = () => {
           <p>Shipment Lead Time</p>
           <p>
             45-90 days for local Fabrics & Accessories, 90-120 days for imported
-            fab and accessories.
+            fabrics and accessories.
           </p>
           <p className="styled-row">Nature of Business</p>
           <p className="styled-row">
@@ -123,7 +122,7 @@ const CompanyProfile = () => {
           </p>
           <p className="styled-row">Members of</p>
           <p className="styled-row">
-          DNCC: 20117, BGMEA: AM - 1519, DOT: I - 1153, ERC: 260326210649920
+          DNCC: 20117, BGMEA: AM - 1549, DOT: I - 1153, ERC: RA - 0148101
           </p>
         </div>
             </div>
