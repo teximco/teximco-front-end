@@ -29,7 +29,7 @@ const WhoWeAre = () => {
               AM-1549” & Our Export registration #RA-0148101.
             </span>
             <br />
-            <span className="font-bold">
+            <span className="">
               We have own knit Garments Manufacturing unit in Narayangonj, Bscic
               Area covrering 12 Production Line.
             </span>
