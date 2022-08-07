@@ -15,7 +15,7 @@ const ProductRange = () => {
             <h1 className='text-center text-5xl mt-5 mb-5'>Product Range</h1>
             <img className="product-range" src="/product-range.jpeg" alt="" />
             <p className='container product-range-p pt-5'>
-            <strong>Circular Knit:</strong> T-shirt, Polo shirt, Tang top, Nightwear, Sports wear, Security wear, Vest, Fleece Jacket,
+            <strong>Circular Knit:</strong> T-shirt, Polo shirt, Tank top, Nightwear, Sports wear, Security wear, Vest, Fleece Jacket,
             Hooded Jacket, Leggings, Underwear, Made of Local & Imported fabrics for Men’s, Women’s & Children’s.
             <br />
             <br />
@@ -33,7 +33,7 @@ const ProductRange = () => {
             <strong>Bags and Towels :</strong> description will be added soon...
             <br />
             <br />
-            <strong>Hades and Caps :</strong> description will be added soon...
+            <strong>Hades and Caps :</strong> Baseball cap, Sun Cap, Sun visor, Bucket cap, Flat Cap, Cowboy hat , Beanie, Knit cap etc.
             <br />
             <br />
             We are providing professional guidance in out-sourcing of ready-made garment production in the most 
