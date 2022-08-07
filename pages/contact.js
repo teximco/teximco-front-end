@@ -115,7 +115,7 @@ export default function Home() {
           <p>
             House # 72 (1st and 2nd Floor),
             <br /> Road # 15, Sector # 11,
-            <br /> Uttara, Dhaka-1230,
+            <br /> Uttara Model Town, Dhaka-1230,
             <br /> Bangladesh.
           </p>
         </div>
