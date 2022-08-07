@@ -77,8 +77,8 @@ const Media = () => {
         <div>
             <div className="managing-director">
                 <div className="content-managing-director">
-                A Visionary Entrepreneurs <span className="font-bold"> Mr. Mohammad Mijanur Rahman </span>
-                Managing Director of <span className="font-bold">TEXIMCO (BD) LTD.</span> acquires of more
+                A Visionary Entrepreneurs <span className=""> Mr. Mohammad Mijanur Rahman </span>
+                Managing Director of <span className="">TEXIMCO (BD) LTD.</span> Acquires of more
                 than 15 years’ professional & business experience of
                 Bangladesh Garments Industries for many valued customers in
                 the world with efficiency, honesty, and reliability.
@@ -86,8 +86,8 @@ const Media = () => {
                 He has a wide range of Business experience in BD garments
                 Industries. He has a very strong business grip over backward &
                 forward linkage business of readymade garments and has
-                gained a_ strong knowledge over garments production,
-                International Marketing, Merchandising, quality, Negotiations.
+                gained strong knowledge over garments production,
+                International Marketing, Merchandising, Quality, Negotiations.
                 <br />
                 In 2021, there were more than 4,500 garment factories,
                 employing about 4.5 million people, a part of Bangladesh’s $30
