@@ -12,11 +12,15 @@ html,
   /* 
   /* font-family: 'Roboto', sans-serif; */
 }
+@font-face{
+  font-family: Imported;
+  src: url('./Nexa Slab Book.ttf');
+}
 p{
   font-size: 20px;
-  font-family: 'Roboto', sans-serif; 
-  font-family: 'Fjalla One', sans-serif;
+  font-family: Imported;
 }
+
 .navbar {
   padding-top: 30px;
   padding-bottom: 10px;
