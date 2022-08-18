@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
     
        {
-        isAmp ?    <h1 className='underline'>ahad</h1>  :     <Navbar></Navbar>
+        isAmp ?    <Navbar></Navbar>
     <Slider></Slider>
    <Logos></Logos>
    <Comparison></Comparison>
@@ -38,7 +38,7 @@ export default function Home() {
    <HomeMedia></HomeMedia>
    <Review></Review>
   <Brands></Brands>
-   <Footer></Footer>
+   <Footer></Footer> : <h1 className='underline'>ahad</h1>    
       }
  
  
