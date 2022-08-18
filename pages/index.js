@@ -21,6 +21,8 @@ export default function Home() {
   global.onscroll = ()=>{
     scrollY > 20 ? setSticky(true) : setSticky(false);
   }
+    const isAmp = useAmp()
+  
   return (
     <div>
       <Head>
